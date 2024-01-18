@@ -307,6 +307,16 @@ div.cont div.img-sk {
   border-radius: 50%;
 }
 
+/* Platforms Section */
+div#platforms {
+  display: flex;
+}
+
+section#google,
+Section#meta {
+  width: 100%;
+}
+
 /* CTA sect */
 section#grow div.cont > div {
   width: 50%;
