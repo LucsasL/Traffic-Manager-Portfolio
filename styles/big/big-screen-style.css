@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+section div {
+  width: 80%;
+}
+
+/* Skills Section */
+section#skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+section div.img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.img-div figure {
+  height: 90%;
+}
