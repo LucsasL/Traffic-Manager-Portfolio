@@ -24,6 +24,8 @@ html, body {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  scroll-behavior: smooth;
 }
 
 div#ui {
@@ -305,16 +307,6 @@ div.cont div.img-sk {
   margin: 20px;
 
   border-radius: 50%;
-}
-
-/* Platforms Section */
-div#platforms {
-  display: flex;
-}
-
-section#google,
-Section#meta {
-  width: 100%;
 }
 
 /* CTA sect */
