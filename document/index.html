@@ -38,6 +38,10 @@
               </li>
             </ul>
           </nav>
+
+          <div id="musicDiv">
+            <input type="checkbox" id="music">
+          </div>
         
           <div id="bgcolor" onclick="backgroundChange()">
             <div></div>
@@ -120,39 +124,58 @@
 
         <section id="skills">
           <div class="cont">
-            <div>
-              <div class="img-sk">
-            
+            <div class="skill-block">
+              <div>
+                <div class="img-sk">
+                <figure>
+                  <img src="../img/startup.png" alt="Promote your brand">
+                </figure>
+                </div>
+
+                <h1>
+                  Campaign Creation
+                </h1>
+
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, labore? Labore nam nostrum corporis, eaque eos, deleniti commodi aliquid ea, autem rerum modi itaque laborum veritatis alias ex quidem laboriosam.
+                </p>
               </div>
-              <h1>
-                Campaign Creation
-              </h1>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, labore? Labore nam nostrum corporis, eaque eos, deleniti commodi aliquid ea, autem rerum modi itaque laborum veritatis alias ex quidem laboriosam.
-              </p>
             </div>
-            <div>
+
+            <div class="skill-block">
               <div class="img-sk">
-            
+                <figure>
+                  <img src="../img/promote.png" alt="Promote your brand">
+                </figure>
               </div>
-              <h1>
-                Copywriting
-              </h1>
-              <p>
-                Cumque illo quas, facere quasi ipsum aspernatur magnam neque, quis dolorum dicta, autem ullam ipsa! Illo necessitatibus facilis obcaecati culpa a ullam ratione harum dolor, unde in, quas, magnam neque!
-              </p>
+
+              <div>
+                <h1>
+                  Copywriting
+                </h1>
+
+                <p>
+                  Cumque illo quas, facere quasi ipsum aspernatur magnam neque, quis dolorum dicta, autem ullam ipsa! Illo necessitatibus facilis obcaecati culpa a ullam ratione harum dolor, unde in, quas, magnam neque!
+                </p>
+              </div>
             </div>
-            <div>
+
+            <div class="skill-block">
               <div class="img-sk">
-            
+                <figure>
+                  <img src="../img/wireframe.png" alt="">
+                </figure>
               </div>
-              <h1>
-                Multi-Platform
-              </h1>
-              <p>
-                Provident officia ratione necessitatibus earum vel! Rerum nam blanditiis esse ullam porro, soluta reiciendis laudantium obcaecati molestias possimus accusamus nemo, repellat sequi quas eum, laboriosam ducimus ab fugiat velit? Corporis.
-              </p>
-            </div>
+
+              <div>
+                <h1>
+                  Multi-Platform
+                </h1>
+                
+                <p>
+                  Provident officia ratione necessitatibus earum vel! Rerum nam blanditiis esse ullam porro, soluta reiciendis laudantium obcaecati molestias possimus accusamus nemo, repellat sequi quas eum, laboriosam ducimus ab fugiat velit? Corporis.
+                </p>
+              </div>
           </section>
             
           <div id="about-style"></div>
@@ -239,21 +262,32 @@
               <div>
                 <div>
                   <div class="contact">
-                    <img src="" alt="Contact through ">
+                    <figure>
+                      <img src="../img/email.png" alt="Contact through E-mail">
+                    </figure>
                   </div>
 
                   <p>
-                    lucsas.lira@gmail.com
+                    <span>
+                      Send me an e-mail at:
+                    </span> <br>
+
+                    <strong>lucsas.lira@gmail.com</strong>
                   </p>
                 </div>
 
                 <div>
                   <div class="contact">
-                    <img src="" alt="Contact through ">
+                    <figure>
+                      <img src="../img/instagram-icon.png" alt="Contact through Instagram">
+                    </figure>
                   </div>
 
                   <p>
-                    @lucsas.l
+                    <span>
+                      Call me in Direct Message:
+                    </span> <br>
+                    <strong>@lucsas.l</strong>
                   </p>
                 </div>
               </div>
@@ -277,6 +311,10 @@
                   <div>
                     <label for="">Message: </label> <br>
                       <textarea name="" id="" cols="30" rows="10" placeholder="Write a message..."></textarea>
+                  </div>
+
+                  <div>
+                    <input type="submit" value="Send" style="background-color: blue; cursor: pointer;">
                   </div>
                 </form>
             </div>
@@ -304,6 +342,7 @@
   </div>
 
   <script src="../scripts/bg.js"></script>
+  <script src="../scripts/music.js"></script>
 
 </body>
 </html>

@@ -135,6 +135,10 @@ input, textarea {
   outline: none;
 }
 
+input#music {
+  border-radius: 50%;
+}
+
 /* Media Settings */
 picture, figure {
   width: 100%;
@@ -303,7 +307,13 @@ section#skills > div.cont > div {
   border-radius: 10px;
 }
 
-div.cont div.img-sk {
+div.skill-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.skill-block div.img-sk {
   background-color: blue;
 
   width: 200px;
@@ -313,6 +323,10 @@ div.cont div.img-sk {
   border-radius: 50%;
 }
 
+div.img-sk img {
+  width: 50%;
+}
+
 /* Meta Ads Section */
 section#meta figure img {
   width: 70%;
@@ -320,7 +334,7 @@ section#meta figure img {
 
 /* CTA sect */
 section#grow div.cont > div {
-  width: 50%;
+  width: 60%;
 }
 
 div#ways-contact {
@@ -332,10 +346,20 @@ div#ways-contact {
 div.contact {
   background: blue;
 
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 
   border-radius: 50%;
+}
+
+div.contact, p {
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+div.contact img {
+  width: 60%;
+  filter: brightness(0);
 }
 
 form {
