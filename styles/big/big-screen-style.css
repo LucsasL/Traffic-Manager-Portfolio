@@ -22,6 +22,8 @@ header div#bgcolor {
 
 /* Main Settings */
 section {
+  height: 900px;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -61,7 +63,11 @@ div.img-div figure {
   height: 90%;
 }
 
-/* Grow Section */
+/* CTA Section */
+form {
+  width: 650px;
+}
+
 form div {
   width: 95%;
 }
