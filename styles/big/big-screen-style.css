@@ -1,5 +1,38 @@
 @charset "UTF-8";
 
+/* Header Settings */
+header > div {
+  margin: 0px 150px;
+}
+
+header div#nav-bar {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: block;
+}
+
+header div#bgcolor {
+  display: block;
+}
+
+/* Main Settings */
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section div.cont {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
 section div {
   width: 80%;
 }
@@ -10,6 +43,14 @@ section#skills {
   justify-content: space-around;
 }
 
+div.skill-block {
+  padding: 20px;
+  margin: 20px;
+
+  border: solid 3px blue;
+  border-radius: 10px;
+}
+
 section div.img-div {
   display: flex;
   flex-direction: column;
@@ -18,4 +59,9 @@ section div.img-div {
 
 div.img-div figure {
   height: 90%;
+}
+
+/* Grow Section */
+form div {
+  width: 95%;
 }

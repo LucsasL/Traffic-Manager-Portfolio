@@ -175,7 +175,7 @@ header {
 header > div {
   width: 100%;
   height: 100%;
-  margin: 0px 150px;
+  margin: 0px 70px;
 
   display: flex;
   justify-content: space-between;
@@ -202,14 +202,18 @@ header a:hover {
 }
 
 header div#nav-bar {
-  width: 45%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header div#bgcolor {
+header nav {
+  display: none;
+}
 
+header div#bgcolor {
+  display: none;
   width: 50px;
   height: 30px;
 
@@ -241,18 +245,14 @@ main > div {
 
 section {
   width: 100%;
-  height: 900px;
   margin: 50px auto;
 
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
 section div.cont {
   width: 80%;
-  display: flex;
-  justify-content: space-around;
 }
 
 section h1 {
@@ -299,15 +299,14 @@ div#socials img {
 }
 
 /* Skills Section */
-section#skills > div.cont > div {
+div.skill-block {
+  width: 100%;
   padding: 20px;
   margin: 20px;
 
   border: solid 3px blue;
   border-radius: 10px;
-}
 
-div.skill-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,12 +362,21 @@ div.contact img {
 }
 
 form {
+  width: 650px;
   padding: 20px;
   margin: 20px;
 
   border-radius: 20px;
   box-shadow: 0px 0px 10px black;
+
+  display: flex;
+  justify-content: center;
 }
+
+form > div {
+  width: 100%;
+}
+
 /* Footer Settings */
 footer {
   background: #151515;
