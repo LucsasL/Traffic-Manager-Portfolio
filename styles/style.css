@@ -276,16 +276,33 @@ section#intro {
   center center
   fixed;
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#intro div.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 }
 
 section#intro h1 {
-  font-size: 4em;
+  font-size: 7em;
+  line-height: 1.5em;
 }
 
-section#intro h2 {
-  font-size: 2em;
+div#socials {
+  display: flex;
+  justify-content: space-evenly;
 }
 
+div#socials img {
+  margin: 10px 5px;
+  }
 /* About Section */
 div#about-style {
   background: #050505;
@@ -297,15 +314,6 @@ div#about-style {
   transform: skewY(-5deg);
   position: absolute;
   left: 0;
-}
-
-div#socials {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-div#socials img {
-  margin: 10px 5px;
 }
 
 /* Skills Section */
