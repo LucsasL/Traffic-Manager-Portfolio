@@ -182,7 +182,7 @@ header > div {
 }
 
 header li {
-  display: inline;
+  display: block;
   list-style-type: none;
   margin: 10px;
 }
@@ -201,16 +201,26 @@ header a:hover {
   transition-duration: .2s;
 }
 
-header div#nav-bar {
-  width: 30%;
+header div#menuButton {
+  display: block;
+
+  cursor: pointer;
+}
+
+header div#mainHeader {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-header nav {
+div#mainHeader > * {
+  width: 100%;  
+}
+
+header menu {
+  width: 100%;
   display: none;
 }
+
 
 header div#bgcolor {
   display: none;

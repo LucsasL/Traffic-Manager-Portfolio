@@ -5,8 +5,19 @@ header > div {
   margin: 0px 150px;
 }
 
-header div#nav-bar {
-  width: 45%;
+header div#mainHeader {
+  width: 55%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header div#menuButton {
+  display: none;
+}
+
+header menu {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +25,11 @@ header div#nav-bar {
 
 header nav {
   display: block;
+  width: 70%;
+}
+
+header li {
+  display: inline;
 }
 
 header div#bgcolor {

@@ -9,6 +9,9 @@
 
   <link rel="stylesheet" href="../styles/style.css" media="all">
   <link rel="stylesheet" href="../styles/big/big-screen-style.css" media="screen and (min-width: 1200px)">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
   
@@ -21,35 +24,39 @@
           </figure>
         </div>
 
-        <div id="nav-bar">
-          <nav>
-            <ul>
-              <li>
-                <a href="./index.html#intro">Home</a>
-              </li>
-
-              <li>
-                <a href="./index.html#about">About</a>
-              </li>
-              <li>
-                <a href="./index.html#google">Google Ads</a>
-              </li>
-              <li>
-                <a href="./index.html#meta">Meta Ads</a>
-              </li>
-              <li>
-                <a href="./index.html#grow">Contact</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div id="musicDiv">
-            <input type="checkbox" id="music">
+        <div id="mainHeader">
+          <div id="menuButton" onclick="menu()">
+            <span class="material-icons" style="font-size: 50px;">menu</span>
           </div>
-        
-          <div id="bgcolor" onclick="backgroundChange()">
-            <div></div>
-          </div>
+          
+          <menu>
+            <nav>
+              <ul>
+                <li>
+                  <a href="./index.html#intro">Home</a>
+                </li>
+                <li>
+                  <a href="./index.html#about">About</a>
+                </li>
+                <li>
+                  <a href="./index.html#google">Google Ads</a>
+                </li>
+                <li>
+                  <a href="./index.html#meta">Meta Ads</a>
+                </li>
+                <li>
+                  <a href="./index.html#grow">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div id="musicDiv">
+              <input type="checkbox" id="music">
+            </div>
+          
+            <div id="bgcolor" onclick="backgroundChange()">
+              <div></div>
+            </div>
+          </menu>
         </div>
       </div>
     </header>
@@ -348,6 +355,7 @@
     </div>
   </div>
 
+  <script src="../script/menu.js"></script>
   <script src="../scripts/bg.js"></script>
   <script src="../scripts/music.js"></script>
 
