@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+/* General Settings */
+::-webkit-scrollbar {
+  display: block;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(54, 23, 255);
+  border-radius: 20px;
+}
+
 /* Header Settings */
 header > div {
   margin: 0px 150px;
@@ -91,6 +109,11 @@ section div.img-div {
 
 div.img-div figure {
   height: 90%;
+}
+
+/* About Section */
+section#about div {
+  width: 80%;
 }
 
 /* CTA Section */

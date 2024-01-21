@@ -196,11 +196,12 @@ header button {
 }
 
 header button#contactButton {
-  background: rgb(249, 93, 93);
+  border-bottom: 3px solid rgb(54, 23, 255);
+  transition-duration: .5s;
 }
 
 header button#contactButton:hover {
-  background: rgb(234, 68, 68);
+  box-shadow: 0px 3px 7px rgb(54, 23, 255);
 }
 
 header button#contactButton a:hover {
@@ -342,7 +343,7 @@ div#about-style {
   background: #050505;
 
   width: 100%;
-  height: 1000px;
+  height: 850px;
   z-index: -1;
 
   transform: skewY(-5deg);
