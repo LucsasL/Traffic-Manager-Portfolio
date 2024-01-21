@@ -306,24 +306,27 @@ section#intro {
 
 section#intro div.cont {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
-  text-align: center;
 }
 
-section#intro h1 {
-  font-size: 7em;
+section#intro span {
+  font-size: 2em;
   line-height: 1.5em;
 }
 
 div#socials {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
+}
+
+div#socials figure {
+  width: auto;
+  margin: 10px;
 }
 
 div#socials img {
-  margin: 10px 5px;
+  margin: 10px 0px;
   }
 /* About Section */
 div#about-style {
