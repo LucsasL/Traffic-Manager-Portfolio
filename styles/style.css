@@ -161,6 +161,10 @@ figcaption {
   display: none;
 }
 
+audio {
+  
+}
+
 /* Header Settings */
 header {
   width: 100vw;

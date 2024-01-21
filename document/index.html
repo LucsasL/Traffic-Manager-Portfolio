@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body>
+<body onload="musicControl('../audio/vegeeettaaaa.mp3')">
   
   <div id="ui">
     <header>
@@ -64,11 +64,11 @@
               </ul>
             </nav>
             <div id="musicDiv">
-              <input type="checkbox" id="music">
+              <input type="checkbox" id="music" checked>
 
-              <audio autoplay loop>
-                <source src="../audio/">
-                <source src="../audio/">  
+              <audio autoplay loop id="player">
+                <source src="../audio/vegeeettaaaa.mp3">
+                <source src="../audio/vegeettaaaaa.ogg">  
               </audio>
             </div>
           
@@ -615,7 +615,7 @@
     </div>
   </div>
 
-  <script src="../script/menu.js"></script>
+  <script src="../scripts/menu.js"></script>
   <script src="../scripts/bg.js"></script>
   <script src="../scripts/music.js"></script>
 
