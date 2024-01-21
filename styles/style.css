@@ -285,6 +285,15 @@ section div.cont {
   width: 80%;
 }
 
+section div.results h1 {
+  width: 100%;
+  text-align: center;
+}
+
+section div.promises {
+  border: 3px solid white;
+}
+
 section h1 {
   font-size: 2em;
 }
@@ -367,6 +376,20 @@ div.skill-block div.img-sk {
 
 div.img-sk img {
   width: 50%;
+}
+
+/* Google Ads Section */
+section#google div.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#google div.platform {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Meta Ads Section */
