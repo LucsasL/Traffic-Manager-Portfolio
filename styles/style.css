@@ -291,7 +291,7 @@ section div.results h1 {
 }
 
 section div.promises {
-  border: 3px solid white;
+  background: rgb(04, 04, 04);
 }
 
 section h1 {
@@ -379,6 +379,15 @@ div.img-sk img {
 }
 
 /* Google Ads Section */
+section#google {
+  height: auto;
+}
+
+section#google div.cont > div {
+  margin: 40px 0px;
+
+}
+
 section#google div.cont {
   display: flex;
   flex-direction: column;
@@ -393,6 +402,28 @@ section#google div.platform {
 }
 
 /* Meta Ads Section */
+section#meta {
+  height: auto;
+}
+
+section#meta div.cont > div {
+  margin: 40px 0px;
+
+}
+
+section#meta div.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#meta div.platform {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 section#meta figure img {
   width: 70%;
 }

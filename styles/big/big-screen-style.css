@@ -51,19 +51,22 @@ section div.cont {
   justify-content: space-around;
 }
 
-section div.cont div.result {
+div.cont div.result {
   width: 100%; 
 }
 
 div.results div {
   width: 100%;
   padding: 20px;
+  margin: 20px;
 
-  display: grid;
-  column-gap: 20px;
-  row-gap: 20px;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 250px 250px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+div.results div.promises {
+  width: 350px;
+  height: 250px;
 }
 
 /* Skills Section */
