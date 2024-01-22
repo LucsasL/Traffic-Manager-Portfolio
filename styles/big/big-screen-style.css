@@ -3,7 +3,7 @@
 /* General Settings */
 ::-webkit-scrollbar {
   display: block;
-  width: 5px;
+  width: 8px;
 
   position: absolute;
 }
