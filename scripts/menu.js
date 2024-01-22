@@ -18,6 +18,6 @@ function menuBehavior() {
 
   } else {
     navMenu.style.display = "block";
-
+      
   }
 }
