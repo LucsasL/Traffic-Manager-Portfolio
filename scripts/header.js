@@ -1,11 +1,11 @@
-const header  = document.querySelector("header");
-const body = document.querySelector("body");
+document.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
 
-function headerBehavior() {
-  let scroll = window.scrollY;
+  if (window.scrollY > 0) {
+    header.classList.add("scrolled");
 
-  if (scroll > 0) {
-    header.style.display = "none";
+  } else {
+    header.classList.remove("scrolled");
 
   }
-}
+});

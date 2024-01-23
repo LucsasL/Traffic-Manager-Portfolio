@@ -187,6 +187,16 @@ header {
   top: 3%;
 }
 
+header.scrolled > div {
+  background: rgba(0, 0, 0, 0.463);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  padding: 30px;
+  margin: 0px 120px;
+  border-radius: 20px;
+}
+
 header > div {
   width: 100%;
   height: 100%;
@@ -194,6 +204,8 @@ header > div {
 
   display: flex;
   justify-content: space-between;
+
+  transition-duration: .2s;
 }
 
 header li {
@@ -315,7 +327,7 @@ div#bgcolor label span i {
 
 div#bgcolor label input:checked ~ span i {
   position: absolute;
-  left: calc(100% - 35px);
+  left: calc(100% - 34px);
 }
 
 /* Main Settings */
@@ -518,7 +530,7 @@ section#google div.img-div:after {
   border-radius: 50%;
 
   position: absolute;
-  top: 3040px;
+  top: 2900px;
   left: 70%;
   z-index: -1;
 }
