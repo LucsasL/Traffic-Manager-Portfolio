@@ -37,6 +37,8 @@ html, body {
   position: relative;
 
   scroll-behavior: smooth;
+
+  cursor: none;
 }
 
 div#ui {
@@ -332,6 +334,8 @@ section div.promises {
   box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.412);
 
   transition-duration: .7s;
+  top: auto;
+  left: auto;
 }
 
 section 
@@ -650,6 +654,19 @@ div#cursorCircle {
     blue,
     rgb(128, 0, 255)
   );
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  display: block;
 }
