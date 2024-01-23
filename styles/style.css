@@ -274,26 +274,48 @@ header canvas:hover {
   );
 }
 
-header div#bgcolor {
+div#bgcolor input {
+  position: relative;
+  z-index: 1;
   display: none;
-  width: 50px;
-  height: 30px;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+div#bgcolor span {
+  background: red;
 
-  border: solid 5px blue;
-  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  border-radius: 80px;
+
+  display: block;
+
+  position: relative;
+
   cursor: pointer;
 }
 
-div#bgcolor div {
-  background-color: blue;
-  width: 40%;
-  height: 75%;
+div#bgcolor label input:checked ~ span {
+  background: #00f;
+}
+
+div#bgcolor label span i {
+  background: white;
+
+  width: 30px;
+  height: 30px;
 
   border-radius: 50%;
+  transition: .5s;
+
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+div#bgcolor label input:checked ~ span i {
+  position: absolute;
+  left: calc(100% - 35px);
 }
 
 /* Main Settings */
