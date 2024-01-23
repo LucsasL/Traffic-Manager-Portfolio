@@ -64,16 +64,16 @@
               </ul>
             </nav>
             <div id="musicDiv">
-              <canvas id="musicButton" onload="playMusic('')" onclick="playMusic()"></canvas>
+              <canvas id="musicButton" onload="playMusic()" onclick="playMusic()"></canvas>
 
-              <audio autoplay loop id="player" src="../audio/vegeeettaaaa.mp3">
-                <source>
-                <source src="../audio/vegeettaaaaa.ogg">  
+              <audio autoplay loop id="player">
+                <source src="../../../../../Downloads/After Dark x Sweater Weather (slowed to perfection) (TikTok Remix)_8xMpAzlzLcA.mp3">
               </audio>
             </div>
           
             <div id="bgcolor" onclick="backgroundChange()">
-              <div></div>
+              <input type="checkbox" id="bgButton">
+              <span></span>
             </div>
           </menu>
         </div>
@@ -542,7 +542,7 @@
       <div id="credits">
         <div>
           <figure>
-            <img src="../img/" alt="Lucsas Logo">
+            <img src="../img/lucsas-logo.png" alt="Lucsas Logo">
           </figure>
         </div>
 

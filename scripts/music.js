@@ -2,6 +2,8 @@ const musicButton = document.querySelector("canvas#musicButton");
 const audioPlayer = document.querySelector("audio#player");
 
 function playMusic() {
+
+  /* Rendering button animation */
   let opt = {
     width: musicButton.offsetWidth,
     height: musicButton.offsetHeight,
@@ -37,7 +39,7 @@ function playMusic() {
     ctx.beginPath();
     let increment = 0;
 
-    for (let i = 0; i <= opt.points; i++) {
+    for (i = 0; i <= opt.points; i++) {
       if (i <= opt.points / 2) {
         increment += 0.1;
 
@@ -59,6 +61,7 @@ function playMusic() {
 
   render();
 
+  /* Audio play */
   musicButton.addEventListener("click", () => {
     opt.power = !opt.power;
 

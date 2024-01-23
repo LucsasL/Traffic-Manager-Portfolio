@@ -363,6 +363,7 @@ section#intro {
     rgb(46, 0, 93)
   );
 
+  height: 100vh;
   margin-top: 0;
 
   display: flex;
@@ -639,7 +640,6 @@ div#footerNav > div {
 footer div#credits {
   background: #070707;
 
-  height: 70px;
   margin: 20px -30px 0px -30px;
 
   display: flex;
