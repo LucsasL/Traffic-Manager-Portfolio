@@ -181,7 +181,7 @@ header {
   display: flex;
   align-items: center;
 
-  position: absolute;
+  position: fixed;
   top: 3%;
 }
 
@@ -523,6 +523,19 @@ section#meta figure img {
   width: 70%;
 }
 
+/* Building Section */
+section#build div.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+}
+
+section#build h1 {
+  margin: 40px 0px;
+}
+
 /* CTA sect */
 section#grow div.cont > div {
   width: 100%;
@@ -581,6 +594,22 @@ footer {
   box-shadow: 0px 5px 15px black;
 }
 
+footer a {
+  transition-duration: .5s;
+}
+
+footer a:hover {
+  background: linear-gradient(
+    to right,
+    blue,
+    rgb(128, 0, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+}
+
 div#meetMe li {
   display: inline-block;
 }
@@ -612,4 +641,15 @@ footer div#credits {
   display: flex;
   justify-content: space-around;
   align-items: center;  
+}
+
+/* Effects */
+div#cursorCircle {
+  background: linear-gradient(
+    45deg,
+    blue,
+    rgb(128, 0, 255)
+  );
+  width: 30px;
+  height: 30px;
 }
