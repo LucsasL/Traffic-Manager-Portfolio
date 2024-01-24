@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucsas - Traffic Manager</title>
 
+  <!-- Favicon -->
   <link rel="shortcut icon" href="../img/lucsas-logo.png" type="image/x-icon">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="../styles/style.css" media="all">
   <link rel="stylesheet" href="../styles/big/big-screen-style.css" media="screen and (min-width: 1200px)">
 
+  <!-- Imports -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
 <body>
   
+  <!-- User Interface -->
   <div id="ui">
     <header onscroll="headerBehavior()">
       <div>
@@ -429,18 +433,18 @@
               <form action="">
                   <div>
                     <div>
-                      <label for="">Name:</label> <br>
-                        <input type="text" name="" id="" placeholder="Your name" required>
+                      <label for="fullName">Name:</label> <br>
+                        <input type="text" id="fullName" placeholder="Your name" required>
                     </div>
 
                     <div>
-                      <label for="">E-mail: </label> <br>
-                        <input type="email" name="" id="" placeholder="Your E-mail" required>
+                      <label for="emailAddress">E-mail: </label> <br>
+                        <input type="email" id="emailAddress" placeholder="Your E-mail" required>
                     </div>
 
                     <div>
-                      <label for="">Message: </label> <br>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Write a message..."></textarea>
+                      <label for="userMsg">Message: </label> <br>
+                        <textarea id="userMsg" cols="30" rows="10" placeholder="Write a message..."></textarea>
                     </div>
 
                     <div>
@@ -564,8 +568,10 @@
     </div>
   </div>
 
+  <!-- Non-static Elements -->
   <div id="cursorCircle"></div>
 
+  <!-- Front-end Scripts -->
   <script src="../scripts/header.js"></script>
 
   <script src="../scripts/menu.js"></script>
@@ -575,6 +581,9 @@
   <script src="../scripts/cursor.js"></script>
 
   <script src="../scripts/music.js"></script>
+
+  <!-- Back-end Scripts -->
+  <script src="../scripts/contact.js"></script>
 
 </body>
 </html>
