@@ -430,25 +430,31 @@
                 Contact
               </h1>
               
-              <form action="">
+              <form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">
                   <div>
                     <div>
                       <label for="fullName">Name:</label> <br>
-                        <input type="text" id="fullName" placeholder="Your name" required>
+                        <input type="text" name="name" placeholder="Your name" required>
                     </div>
 
                     <div>
                       <label for="emailAddress">E-mail: </label> <br>
-                        <input type="email" id="emailAddress" placeholder="Your E-mail" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
                     </div>
 
                     <div>
                       <label for="userMsg">Message: </label> <br>
-                        <textarea id="userMsg" cols="30" rows="10" placeholder="Write a message..."></textarea>
+                        <textarea name="message" cols="30" rows="10" placeholder="Write a message..." required></textarea>
                     </div>
 
                     <div>
                       <input type="submit" value="Send" style="background-color: blue; cursor: pointer;">
+                    </div>
+
+                    <div>
+                      <input type="hidden" name="accessKey" value="9f7e2bc4-d0c9-4819-ac06-2c58044142e0"> 
+                      <input type="hidden" name="redirectTo" value="./success.html">
+                      <input type="hidden" name="replyTo" value="@">
                     </div>
                   </div>
                 </form>
@@ -581,9 +587,6 @@
   <script src="../scripts/cursor.js"></script>
 
   <script src="../scripts/music.js"></script>
-
-  <!-- Back-end Scripts -->
-  <script src="../scripts/contact.js"></script>
 
 </body>
 </html>

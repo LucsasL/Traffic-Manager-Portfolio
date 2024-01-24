@@ -642,7 +642,7 @@ section#google div.img-div:before {
 
   border-radius: 50%;
   position: absolute;
-  left: 55%;
+  left: 57%;
 }
 
 section#google div.img-div:after {
@@ -831,7 +831,7 @@ div#cursorCircle {
   left: 0px;
   transform: translate(-50%, -50%);
 
-  z-index: 1;
+  z-index: 3;
 
   pointer-events: none;
 
