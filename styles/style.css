@@ -113,7 +113,7 @@ a {
   text-decoration: none;
 }
 
-span.fancy {
+.fancy {
   background: linear-gradient(
     to right,
     blue,
@@ -192,11 +192,11 @@ header {
 
   position: fixed;
   top: 3%;
-  z-index: 1;
+  z-index: 2;
 }
 
 header.scrolled > div {
-  background: rgba(0, 0, 0, 0.463);
+  background: rgba(0, 0, 0, 0.641);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
@@ -341,6 +341,13 @@ div#bgcolor input:checked ~ span i#symbol {
   transform: translateY(-50%);
 }
 
+div#bgcolor input:checked ~ span i#symbol::after {
+  background: black;
+
+  width: 20px;
+  height: 20px;
+}
+
 div#bgcolor label input:checked ~ span {
   background: linear-gradient(
     to right,
@@ -432,11 +439,8 @@ section h1 {
 
 /* Intro Section */
 section#intro {
-   background: linear-gradient(
-    to right,
-    rgb(0, 0, 81),
-    rgb(46, 0, 93)
-  );
+   background: url('../img/pattern.jpg') no-repeat center;
+   background-size: cover;
 
   height: 100vh;
   margin-top: 0;
@@ -447,39 +451,54 @@ section#intro {
 }
 
 section#intro h1 {
+  width: 100%;
+  height: 180px;
+
   position: relative;
   display: inline-block;
-  height: 150px;
 }
 
 section#intro span.nickname {
-  background: linear-gradient(
+  color: white;
+
+  font-size: 4em;
+
+  position: absolute;
+  top: 0;
+}
+
+section#intro span.cursiveWords {
+    background: linear-gradient(
     to right,
-    var(--color0),
-    var(--color1)
+    rgb(42, 42, 210),
+    rgb(120, 34, 206)
   );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 
-  font-size: 2.5em;
-
-  position: absolute;
-  top: 25%;
-}
-
-section#intro span.cursiveWords {
-  height: 30px;
+  height: auto;
 
   text-align: center;
-  vertical-align: middle;
-  line-height: 1.8em;
-  font: bold 2.2em 'Kalam', cursive;
+  font: bold 2.6em 'Kalam', cursive;
+  letter-spacing: .05em;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.353));
 
   display: inline-block;
 
   position: relative;
+  top: 10%;
   z-index: 1;
+
+  mix-blend-mode: normal;
+}
+
+div.introducing button {
+  margin: 0px auto;
+}
+
+div.introducing button:hover {
+  scale: 2;
 }
 
 section#intro div.cont {
