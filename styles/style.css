@@ -129,8 +129,8 @@ a {
 button {
   background: linear-gradient(
     to right,
-    blue,
-    red
+    var(--color0),
+    var(--color1)
   );
 
   width: 80%;
