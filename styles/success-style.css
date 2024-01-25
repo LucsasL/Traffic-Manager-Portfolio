@@ -131,13 +131,8 @@ main h1 {
 }
 
 main section.cont {
-  background: rgba(0, 0, 0, 0.43);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-
   height: 100%;
   padding: 50px;
-  border: 3px solid white;
   border-radius: 30px;
 
   display: flex;
