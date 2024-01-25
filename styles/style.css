@@ -44,8 +44,6 @@ html, body {
   position: relative;
 
   scroll-behavior: smooth;
-
-  cursor: none;
 }
 
 div#ui {
@@ -337,23 +335,41 @@ div#bgcolor span {
 div#bgcolor i#symbol {
   background: white;
 
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
 }
 
 div#bgcolor input:not(:checked) ~ span i#symbol {
+  border: 2px solid black;
+  box-shadow: 9px 0px 0px -6px white,
+              -9px 0px 0px -6px white,
+              0px 9px 0px -6px white,
+              0px -9px 0px -6px white,
+              7px -7px 0px -6px white,
+              -7px -7px 0px -6px white,
+              -7px 7px 0px -6px white,
+              7px 7px 0px -6px white;
+
+  width: 15px;
+  height: 15px;
+
   position: absolute;
   top: 50%;
   left: calc(86% - 14%);
   transform: translate(-50%, -50%);
+
+  mix-blend-mode: screen;
 }
 
 div#bgcolor input:checked ~ span i#symbol {
+  background: transparent;
+  box-shadow: -4px 4px 0px 1px white;
+
   position: absolute;
   top: 50%;
-  left: 15%;
-  transform: translateY(-50%);
+  left: 25%;
+  transform: translateY(-72%);
 }
 
 div#bgcolor input:checked ~ span i#symbol::after {
@@ -436,30 +452,19 @@ section div.promises {
   left: auto;
 }
 
-section 
-.p1:hover,
-.p2:hover,
-.p3:hover,
-.p4:hover,
-.p5:hover,
-.p6:hover {
-  margin-bottom: 60px;
-}
-
 section h1 {
   font-size: 2em;
 }
 
 /* Intro Section */
 section#intro {
-   background: url('../img/pattern.jpg') no-repeat center;
-   background-size: cover;
+  background: url('../img/pattern.jpg') no-repeat center;
+  background-size: cover;
 
   height: 100vh;
   margin-top: 0;
 
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -493,14 +498,14 @@ section#intro span.cursiveWords {
   height: auto;
 
   text-align: center;
-  font: bold 2.6em 'Kalam', cursive;
-  letter-spacing: .05em;
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.353));
+  font: bolder 2em 'Kalam', cursive;
+  letter-spacing: .25em;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .9));
 
   display: inline-block;
 
   position: relative;
-  top: 10%;
+  top: 20%;
   z-index: 1;
 
   mix-blend-mode: normal;
@@ -515,8 +520,9 @@ div.introducing button:hover {
 }
 
 section#intro div.cont {
+  width: 85%;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -524,7 +530,6 @@ section#intro div.cont > div {
   width: 70%;
 
   display: flex;
-  justify-content: space-around;
   flex-direction: row-reverse;
 }
 
@@ -585,6 +590,16 @@ div#about-style {
 }
 
 /* Skills Section */
+section#skills div.cont {
+  display: flex;
+  flex-direction: column;
+}
+
+section#skills div.cont div#cards {
+  display: flex;
+  justify-content: space-around;
+}
+
 div.skill-block {
   background: linear-gradient(
     to bottom,
@@ -632,14 +647,12 @@ section#google div.cont > div {
 section#google div.cont {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 section#google div.platform {
   width: 100%;
 
   display: flex;
-  justify-content: space-between;
 }
 
 section#google div.img-div:before {
@@ -690,14 +703,12 @@ section#meta div.cont > div {
 section#meta div.cont {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 section#meta div.platform {
   width: 100%;
 
   display: flex;
-  justify-content: space-between;
 }
 
 section#meta figure img {
@@ -764,7 +775,6 @@ footer {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, .2);
 }
 
