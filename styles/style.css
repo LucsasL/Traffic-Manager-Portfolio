@@ -25,6 +25,9 @@
 
   box-sizing: border-box;
 
+  border: none;
+  outline: none;
+
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -161,7 +164,7 @@ button a {
 }
 
 input, textarea {
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, .8);
   color: white;
 
   width: 100%;
@@ -372,13 +375,6 @@ div#bgcolor input:checked ~ span i#symbol {
   transform: translateY(-72%);
 }
 
-div#bgcolor input:checked ~ span i#symbol::after {
-  background: black;
-
-  width: 20px;
-  height: 20px;
-}
-
 div#bgcolor label input:checked ~ span {
   background: linear-gradient(
     to right,
@@ -511,12 +507,18 @@ section#intro span.cursiveWords {
   mix-blend-mode: normal;
 }
 
-div.introducing button {
-  margin: 0px auto;
+div#introducing {
+  transform: matrix(1, -.15, 0, 1, 10, 1);
 }
 
-div.introducing button:hover {
-  scale: 2;
+div#introducing button {
+  margin: 0px auto;
+
+  transition-duration: .5s;
+}
+
+div#introducing button:hover {
+  scale: 1.05;
 }
 
 section#intro div.cont {
@@ -547,10 +549,17 @@ div#socials {
 }
 
 div#socials div {
+    background: linear-gradient(
+    45deg,
+    var(--color0),
+    var(--color1)
+  );
+  box-shadow: 5px 2px 0px var(--color1);
+
   width: 50px;
   height: 50px;
   padding: 10px;
-  margin: 5px 10px;
+  margin: 15px 10px;
   border-radius: 50%;
 
   display: flex;
@@ -567,11 +576,7 @@ div#socials img {
 }
 
 div#socials > div:hover {
-  background: linear-gradient(
-    45deg,
-    var(--color0),
-    var(--color1)
-  );
+  scale: 1.01;
 
   transition-duration: .4s;
 }
