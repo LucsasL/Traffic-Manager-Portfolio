@@ -841,6 +841,17 @@ footer div#credits {
 }
 
 /* Effects */
+.curves {
+  width: 100vw;
+  height: 250vh;
+
+  margin-left: -120px;
+
+  position: absolute;
+  top: 300%;
+  z-index: -1;
+}
+
 div#cursorCircle {
   background: linear-gradient(
     45deg,
