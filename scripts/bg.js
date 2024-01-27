@@ -1,11 +1,5 @@
-document.addEventListener("click", () => {
-  const bg = document.querySelector("body");
-  const checkBox = document.querySelector("input#bgButton");
+const checkBox = document.querySelector("input#bgButton");
 
-  if (checkBox.checked) {
-    bg.style.backgroundColor = "var(--bgWhite)";
-
-  } else {
-    bg.style.backgroundColor = "var(--bg)";
-  }
-})
+checkBox.onclick = function () {
+  document.body.classList.toggle("light-theme");
+}

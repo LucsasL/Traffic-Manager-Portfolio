@@ -6,17 +6,53 @@
 
 /* General Settings */
 :root {
+  --base: black;
+
   --bg: #060606;
   --bg2: #010101;
+  --bg3: #151515;
 
-  --bgWhite: #fff;
-  --bgWhite1: rgb(253, 253, 253);
+  --shadow: rgba(0, 0, 0, .8);
+  
+  --txtColor: white;
 
   --color0: #00f; 
   --color1: rgb(128, 0, 255);
 
-  --color2: red;
-  --color3: #ff6a00;
+  --header: rgba(0, 0, 0, .5);
+  --promises: rgba(02, 02, 02, .5);
+  --input: black;
+  --bgCredit: #070707;
+
+  --contactButton: rgb(54, 23, 255);
+
+  /* Images variable */
+  --intro-img: var('../img/pattern.png');
+}
+
+.light-theme {
+  --base: white;
+
+  --bg: rgb(225, 225, 225);
+  --bg2: rgb(210, 210, 210);
+  --bg3: rgb(200, 200, 200);
+
+  --shadow: rgba(0, 0, 0, .1);
+
+  --txtColor: black;
+
+  --color0: red;
+  --color1: #ff6a00;
+
+  --header: rgba(255, 255, 255, .5);
+  --promises: rgb(235, 235, 235);
+  --input: #f5f5f5;
+  --bgCredit: #f8f8f8;
+
+  --contactButton: rgb(255, 127, 23);
+
+  /* Images variables */
+  --intro-img: var('../img/pattern-light.png');
 }
 
 * {
@@ -37,7 +73,7 @@
 
 html, body {
   background-color: var(--bg);
-  color: white;
+  color: var(--txtColor);
 
   width: 100vw;
   height: 100vh;
@@ -47,6 +83,8 @@ html, body {
   position: relative;
 
   scroll-behavior: smooth;
+
+  transition: background .5s;
 }
 
 div#ui {
@@ -58,10 +96,10 @@ div#ui {
 div#msg-me {
   background: linear-gradient(
     135deg,
-    blue,
-    rgb(128, 0, 255)
+    var(--color0),
+    var(--color1)
   );
-  color: white;
+  color: var(--txtColor);
 
   width: 75px;
   height: 75px;
@@ -77,8 +115,8 @@ div#msg-me {
 div#msg-me:hover {
   background: linear-gradient(
     125deg,
-    rgb(128, 0, 255),
-    blue
+    var(--color1),
+    var(--color0)
   );
 
   transition-duration: .5s;
@@ -99,6 +137,7 @@ div#msg-me img {
 
 /* Text Settings */
 p {
+  color: var(--txtColor);
   margin: 15px 0px;
 
   font-size: 1.2em;
@@ -111,7 +150,7 @@ li {
 }
 
 a {
-  color: white;
+  color: var(--txtColor);
   text-decoration: none;
 }
 
@@ -123,8 +162,8 @@ a {
 .fancy {
   background: linear-gradient(
     to right,
-    blue,
-    rgb(128, 0, 255)
+    var(--color0),
+    var(--color1)
   );
 
   color: transparent;
@@ -138,9 +177,9 @@ a {
   width: auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, .91),
+  box-shadow: 0px 5px 15px var(--shadow),
               -3px -3px 2px rgba(255, 255, 255, .3),
-              15px 15px 15px rgb(0, 0, 0, .2);
+              15px 15px 15px var(--shadow);
 }
 
 button {
@@ -158,15 +197,15 @@ button {
 
 button a {
   display: block;
-  color: white;
+  color: var(--txtColor);
   width: 100%;
   height: 100%;
   padding: 10px;
 }
 
 input, textarea {
-  background: rgba(0, 0, 0, .8);
-  color: white;
+  background: var(--input);
+  color: var(--txtColor);
 
   width: 100%;
   padding: 10px;
@@ -213,7 +252,7 @@ header {
 }
 
 header.scrolled > div {
-  background: rgba(0, 0, 0, 0.641);
+  background: var(--header);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
@@ -247,12 +286,12 @@ header button {
 }
 
 header button#contactButton {
-  border-bottom: 3px solid rgb(54, 23, 255);
+  border-bottom: 3px solid var(--contactButton);
   transition-duration: .5s;
 }
 
 header button#contactButton:hover {
-  box-shadow: 0px 3px 7px rgb(54, 23, 255);
+  box-shadow: 0px 3px 7px var(--contactButton);
 }
 
 header a {
@@ -262,8 +301,8 @@ header a {
 header a:hover {
   background: linear-gradient(
     to right,
-    blue,
-    rgb(128, 0, 255)
+    var(--color0),
+    var(--color1)
   );
 
   background-clip: text;
@@ -306,8 +345,8 @@ header canvas {
 header canvas:hover {
   background: linear-gradient(
     to right,
-    blue,
-    rgb(128, 0, 255)
+    var(--color0),
+    var(--color1)
   );
 }
 
@@ -320,8 +359,8 @@ div#bgcolor input {
 div#bgcolor span {
   background: linear-gradient(
     to right,
-    var(--color2),
-    var(--color3)
+    var(--color0),
+    var(--color1)
   );
 
   width: 80px;
@@ -416,8 +455,10 @@ main > div {
 }
 
 section {
+  background: var(--bg);
+
   width: 100%;
-  margin: 50px auto;
+  padding: 50px auto;
 
   display: flex;
   justify-content: center;
@@ -434,17 +475,17 @@ section div.results h1 {
 section div.promises {
   background: linear-gradient(
     to bottom,
-    rgb(02, 02, 02, .5),
-    rgb(15, 15, 15, .5)
+    var(--promises),
+    var(--bg3)
   );
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blue(4px);
 
   border-radius: 8px;
 
-  box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.738),
+  box-shadow: 0px 15px 15px 10px var(--shadow),
               -3px -3px 2px rgba(255, 255, 255, .3),
-              15px 15px 15px rgb(0, 0, 0, .2);
+              15px 15px 10px var(--shadow);
 
   transition-duration: .7s;
   top: auto;
@@ -457,7 +498,7 @@ section h1 {
 
 /* Intro Section */
 section#intro {
-  background: url('../img/pattern.jpg') no-repeat center;
+  background: var(--intro-img) no-repeat center;
   background-size: cover;
 
   height: 100vh;
@@ -502,7 +543,7 @@ section#intro div.intro-content h1 {
 }
 
 section#intro div.intro-content span.nickname {
-  color: white;
+  color: var(--txtColor);
 
   font-size: 4em;
 
@@ -513,8 +554,8 @@ section#intro div.intro-content span.nickname {
 section#intro span.cursiveWords {
     background: linear-gradient(
     to right,
-    rgb(42, 42, 210),
-    rgb(120, 34, 206)
+    var(--color0),
+    var(--color1)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -596,15 +637,19 @@ div#socials > div:hover {
 
 /* About Section */
 div#about-style {
-  background: #010101;
+  background: var(--bg2);
 
   width: 100%;
   height: 850px;
-  z-index: -1;
+  z-index: 0;
 
   transform: skewY(-5deg);
   position: absolute;
   left: 0;
+}
+
+section#about div.cont {
+  z-index: 1;
 }
 
 /* Skills Section */
@@ -614,6 +659,8 @@ section#skills div.cont {
 }
 
 section#skills div.cont div#cards {
+  background: var(--bg);
+
   display: flex;
   justify-content: space-around;
 }
@@ -621,8 +668,8 @@ section#skills div.cont div#cards {
 div.skill-block {
   background: linear-gradient(
     to bottom,
-    rgb(0, 0, 0),
-    rgb(15, 15, 15)
+    var(--base),
+    var(--bg3)
   );
 
   width: 100%;
@@ -639,7 +686,10 @@ div.skill-block {
 }
 
 div.skill-block div.img-sk {
-  background-color: blue;
+  background: radial-gradient(
+    var(--color0),
+    var(--color1)
+  );
 
   width: 200px;
   height: 200px;
@@ -725,8 +775,8 @@ div#ways-contact {
 div.contact {
   background: linear-gradient(
     135deg,
-    blue,
-    rgb(128, 0, 255)
+    var(--color0),
+    var(--color1)
   );
 
   width: 75px;
@@ -750,9 +800,9 @@ form {
   padding: 40px 10px;
 
   border-radius: 20px;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, .9),
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3),
               -2px -2px 2px rgba(255, 255, 255, .3),
-              15px 15px 15px rgb(0, 0, 0, .2);
+              0px 15px 10px var(--shadow);
 
   display: flex;
   justify-content: center;
@@ -762,10 +812,20 @@ form > div {
   width: 100%;
 }
 
+form .submit-button {
+  background: linear-gradient(
+    to right,
+    var(--color0),
+    var(--color1)
+  );
+
+  cursor: pointer;
+}
+
 /* Footer Settings */
 footer {
-  background: #151515;
-  color: white;
+  background: var(--bg3);
+  color: var(--txtColor);
 
   padding: 30px 30px 0px 30px;
 
@@ -781,8 +841,8 @@ footer a {
 footer a:hover {
   background: linear-gradient(
     to right,
-    blue,
-    rgb(128, 0, 255)
+    var(--color0),
+    var(--color1)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -822,7 +882,7 @@ div#footerNav > div {
 }
 
 footer div#credits {
-  background: #070707;
+  background: var(--bgCredit);
 
   margin: 20px -30px 0px -30px;
 
@@ -846,8 +906,8 @@ footer div#credits {
 div#cursorCircle {
   background: linear-gradient(
     45deg,
-    blue,
-    rgb(128, 0, 255)
+    var(--color0),
+    var(--color1)
   );
   width: 10px;
   height: 10px;
