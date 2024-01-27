@@ -16,7 +16,7 @@
   --color1: rgb(128, 0, 255);
 
   --color2: red;
-  --color3: rgb(255, 106, 0);
+  --color3: #ff6a00;
 }
 
 * {
@@ -464,10 +464,36 @@ section#intro {
   margin-top: 0;
 
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+section#intro div.cont {
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#intro div.intro-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-section#intro h1 {
+section#intro div.intro-content > div {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+section#intro div.intro-content h1 {
   width: 100%;
   height: 180px;
 
@@ -475,7 +501,7 @@ section#intro h1 {
   display: inline-block;
 }
 
-section#intro span.nickname {
+section#intro div.intro-content span.nickname {
   color: white;
 
   font-size: 4em;
@@ -506,8 +532,6 @@ section#intro span.cursiveWords {
   position: relative;
   top: 20%;
   z-index: 1;
-
-  mix-blend-mode: normal;
 }
 
 div#introducing {
@@ -524,21 +548,7 @@ div#introducing button:hover {
   scale: 1.05;
 }
 
-section#intro div.cont {
-  width: 85%;
-
-  display: flex;
-  align-items: center;
-}
-
-section#intro div.cont > div {
-  width: 70%;
-
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-section#intro span {
+  section#intro span {
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -854,4 +864,9 @@ div#cursorCircle {
   pointer-events: none;
 
   display: block;
+}
+
+div.scroll-anim {
+  display: flex;
+  justify-content: center;
 }
