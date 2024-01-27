@@ -103,6 +103,7 @@ p {
 
   font-size: 1.2em;
   line-height: 2em;
+  text-shadow: 2px 2px 5px 2px black;
 }
 
 li {
@@ -433,9 +434,11 @@ section div.results h1 {
 section div.promises {
   background: linear-gradient(
     to bottom,
-    rgb(02, 02, 02),
-    rgb(15, 15, 15)
+    rgb(02, 02, 02, .5),
+    rgb(15, 15, 15, .5)
   );
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blue(4px);
 
   border-radius: 8px;
 
