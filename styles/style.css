@@ -659,8 +659,14 @@ section#google div.cont {
 
 section#google div.platform {
   width: 100%;
+  margin: 20px 0px;
 
   display: flex;
+}
+
+section#google div.img-div {
+  position: relative;
+  width: 150%;
 }
 
 section#google div.img-div:before {
@@ -679,23 +685,16 @@ section#google div.img-div:before {
   left: 57%;
 }
 
-section#google div.img-div:after {
-  content: '';
-  background: linear-gradient(
-    45deg,
-    blue,
-    rgb(128, 0, 255)
-  );
-
+section#google img {
   width: 250px;
   height: 250px;
+}
 
-  border-radius: 50%;
+section#google #google-design {
+  width: auto;
 
   position: absolute;
-  top: 2900px;
-  left: 70%;
-  z-index: -1;
+  left: 10%;
 }
 
 /* Meta Ads Section */
