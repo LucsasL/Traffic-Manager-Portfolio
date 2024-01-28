@@ -12,7 +12,7 @@
   --bg2: #010101;
   --bg3: #151515;
 
-  --shadow: rgba(0, 0, 0, .8);
+  --shadow: rgba(0, 0, 0, 0.488);
   
   --txtColor: white;
 
@@ -21,6 +21,7 @@
 
   --header: rgba(0, 0, 0, .5);
   --promises: rgba(02, 02, 02, .5);
+  --promises2: rgb(21, 21, 21, .5);
   --input: black;
   --bgCredit: #070707;
 
@@ -39,7 +40,8 @@
   --txtColor: black;
 
   --header: rgba(255, 255, 255, .5);
-  --promises: rgb(235, 235, 235);
+  --promises: rgb(235, 235, 235, .5);
+  --promises2: rgba(200, 200, 200, .5);
   --input: #f5f5f5;
   --bgCredit: #a8a8a8;
 
@@ -74,6 +76,7 @@ html, body {
   position: relative;
 
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 
   transition: background .5s;
 }
@@ -106,6 +109,7 @@ div#msg-me {
   position: fixed;
   top: 85%;
   left: 90%;
+  z-index: 1;
 }
 
 div#msg-me:hover {
@@ -138,7 +142,11 @@ p {
 
   font-size: 1.2em;
   line-height: 2em;
-  text-shadow: 2px 2px 5px 2px black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+.big {
+  font-size: 3em;
 }
 
 li {
@@ -176,6 +184,9 @@ a {
   box-shadow: 0px 5px 15px var(--shadow),
               -3px -3px 2px rgba(255, 255, 255, .3),
               15px 15px 15px var(--shadow);
+  
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blue(6px);
 }
 
 button {
@@ -473,7 +484,7 @@ section div.promises {
   background: linear-gradient(
     to bottom,
     var(--promises),
-    var(--bg3)
+    var(--promises2)
   );
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blue(4px);
@@ -482,7 +493,7 @@ section div.promises {
 
   box-shadow: 0px 15px 15px 10px var(--shadow),
               -3px -3px 2px rgba(255, 255, 255, .3),
-              15px 15px 10px var(--shadow);
+              0px 5px 15px 1px var(--shadow);
 
   transition-duration: .7s;
   top: auto;
@@ -596,7 +607,7 @@ div#socials {
 
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
 }
 
 div#socials div {
@@ -685,8 +696,8 @@ div.skill-block {
 
 div.skill-block div.img-sk {
   background: radial-gradient(
-    var(--color0),
-    var(--color1)
+    var(--color1),
+    var(--color0)
   );
 
   width: 200px;
@@ -801,6 +812,9 @@ form {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3),
               -2px -2px 2px rgba(255, 255, 255, .3),
               0px 15px 10px var(--shadow);
+          
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 
   display: flex;
   justify-content: center;
@@ -833,7 +847,7 @@ footer {
 }
 
 footer a {
-  transition-duration: .5s;
+  transition: all .5s ease;
 }
 
 footer a:hover {
@@ -891,7 +905,7 @@ footer div#credits {
 }
 
 /* Effects */
-.curves {
+.curves1 {
   width: 100vw;
   height: 250vh;
 
@@ -900,6 +914,24 @@ footer div#credits {
   position: absolute;
   top: 300%;
   z-index: 0;
+}
+
+.curves2 {
+  width: 110vw;
+
+  margin-left: -70px;
+
+  position: absolute;
+  top: 590%;
+}
+
+.curves3 {
+  width: 110vw;
+
+  margin-left: -70px;
+
+  position: absolute;
+  top: 140%;
 }
 
 div#cursorCircle {
