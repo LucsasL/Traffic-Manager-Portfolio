@@ -27,7 +27,7 @@
   --contactButton: rgb(54, 23, 255);
 
   /* Images variable */
-  --intro-img: var('../img/pattern.png');
+  --intro-img: '../img/pattern.png';
 }
 
 .light-theme {
@@ -54,7 +54,7 @@
   --footer: #aaa;
 
   /* Images variables */
-  --intro-img: var('../img/pattern-light.png');
+  --intro-img: '../img/pattern-light.png';
 }
 
 * {
@@ -96,7 +96,8 @@ body * {
 div#ui {
   height: 100%;
   overflow-x: clip;
-} 
+  z-index: 1;
+}
 
 /* Icons */
 div#msg-me {
@@ -472,6 +473,7 @@ section {
 
 section div.cont {
   width: 80%;
+  z-index: 1;
 }
 
 section div.results h1 {
@@ -906,7 +908,7 @@ footer div#credits {
 
   position: absolute;
   top: 300%;
-  z-index: -1;
+  z-index: 0;
 }
 
 div#cursorCircle {
