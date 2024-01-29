@@ -7,10 +7,12 @@
 /* General Settings */
 :root {
   --base: black;
+  --baseBlur: rgba(0, 0, 0, .3);
 
   --bg: #060606;
   --bg2: #010101;
   --bg3: #151515;
+  --bg3Blur: rgba(0, 0, 0, .3);
 
   --shadow: rgba(0, 0, 0, 0.488);
   
@@ -30,10 +32,12 @@
 
 .light-theme {
   --base: white;
+  --baseBlur: rgba(255, 255, 255, .3);
 
   --bg: rgb(225, 225, 225);
   --bg2: rgb(210, 210, 210);
   --bg3: rgb(200, 200, 200);
+  --bg3Blur: rgba(255, 255, 255, .3);
 
   --shadow: rgba(0, 0, 0, .1);
 
@@ -118,10 +122,18 @@ div#msg-me:hover {
     var(--color1),
     var(--color0)
   );
-
-  transition-duration: .5s;
-
+  
   box-shadow: 6px 6px 15px black;
+
+  animation: gradientSwap .5s ease-in-out;
+}
+
+@keyframes gradientSwap {
+  from {
+    transform: rotate(0%);
+  } to {
+    transform: rotate(50%);
+  }
 }
 
 div#msg-me a {
@@ -668,8 +680,6 @@ section#skills div.cont {
 }
 
 section#skills div.cont div#cards {
-  background: var(--bg);
-
   display: flex;
   justify-content: space-around;
 }
@@ -677,9 +687,11 @@ section#skills div.cont div#cards {
 div.skill-block {
   background: linear-gradient(
     to bottom,
-    var(--base),
+    var(--baseBlur),
     var(--bg3)
   );
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 
   width: 100%;
   padding: 20px;
@@ -931,7 +943,7 @@ footer div#credits {
   margin-left: -70px;
 
   position: absolute;
-  top: 140%;
+  top: 160%;
 }
 
 div#cursorCircle {
