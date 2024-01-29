@@ -149,6 +149,10 @@ p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
 }
 
+h1 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
 .big {
   font-size: 3em;
 }
@@ -181,6 +185,8 @@ a {
 }
 
 .block-text {
+  background: var(--bg3Blur);
+
   display: inline-block;
   width: auto;
   padding: 20px;
@@ -306,6 +312,7 @@ header button#contactButton:hover {
 }
 
 header a {
+  color: var(--txtColor);
   transition: all .5s ease;
 }
 
@@ -370,8 +377,8 @@ div#bgcolor input {
 div#bgcolor span {
   background: linear-gradient(
     to right,
-    red,
-    rgb(255, 145, 0)
+    rgb(106, 106, 255),
+    rgb(200, 0,255)
   );
 
   width: 80px;
@@ -383,7 +390,7 @@ div#bgcolor span {
   position: relative;
 
   cursor: pointer;
-  box-shadow: 0px 3px 10px 2px rgba(255, 0, 0, 0.218),
+  box-shadow: 0px 3px 10px 2px rgba(255, 0, 255, 0.218),
               inset 0px 0px 15px var(--shadow);
 }
 
@@ -497,7 +504,7 @@ section div.promises {
   -webkit-backdrop-filter: blue(4px);
 
   padding: 20px;
-  margin: 30px;
+  margin: 30px 0px;
   border-radius: 8px;
 
   box-shadow: 0px 15px 15px 10px var(--shadow),
@@ -663,7 +670,7 @@ div#socials > div:hover {
 
 /* About Section */
 section#about {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 div#about-style {
@@ -679,6 +686,7 @@ div#about-style {
 }
 
 section#about div.cont {
+  margin-top: 50px;
   z-index: 1;
 }
 
@@ -705,7 +713,10 @@ div.skill-block {
   padding: 20px;
   margin: 20px 0px;
 
-  box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.412);
+    box-shadow: 0px 15px 15px 10px var(--shadow),
+              -3px -3px 2px rgba(255, 255, 255, .3),
+              0px 5px 15px 1px var(--shadow);            
+
   border-radius: 10px;
   transition-duration: .7s;
 
@@ -861,7 +872,6 @@ footer {
   color: var(--txtColor);
 
   padding: 30px 30px 0px 30px;
-  margin-top: 30px;
 
   display: flex;
   flex-direction: column;
