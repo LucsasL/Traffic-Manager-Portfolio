@@ -9,13 +9,17 @@ section#intro div.cont > div{
   width: 100%;
 }
 
-section#intro-content {
+div.intro-content {
   display: flex;
   justify-content: space-around;
 }
 
-section#intro-content > div {
+div.intro-content > div {
   width: 50%;
+}
+
+div#introImg {
+  display: block;
 }
 
 div#scroll-anim {
