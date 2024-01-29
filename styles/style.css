@@ -122,18 +122,10 @@ div#msg-me:hover {
     var(--color1),
     var(--color0)
   );
-  
+
+  transition-duration: .5s;
+
   box-shadow: 6px 6px 15px black;
-
-  animation: gradientSwap .5s ease-in-out;
-}
-
-@keyframes gradientSwap {
-  from {
-    transform: rotate(0%);
-  } to {
-    transform: rotate(50%);
-  }
 }
 
 div#msg-me a {
@@ -391,7 +383,8 @@ div#bgcolor span {
   position: relative;
 
   cursor: pointer;
-  box-shadow: 0px 3px 10px 2px rgba(255, 0, 0, 0.218);
+  box-shadow: 0px 3px 10px 2px rgba(255, 0, 0, 0.218),
+              inset 0px 0px 15px var(--shadow);
 }
 
 div#bgcolor i#symbol {
@@ -441,11 +434,13 @@ div#bgcolor label input:checked ~ span {
     var(--color1)
   );
 
-  box-shadow: 0px 3px 10px 2px rgba(0, 0, 255, 0.218);
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 255, 0.218),
+              inset 0px 0px 15px var(--shadow);
 }
 
 div#bgcolor label span i#thumb {
   background: white;
+  box-shadow: 0px 0px 10px var(--shadow);
 
   width: 30px;
   height: 30px;
