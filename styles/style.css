@@ -267,21 +267,21 @@ header.scrolled > div {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
-  padding: 30px;
-  margin: 0px 120px;
   border-radius: 20px;
 }
 
 header > div {
   width: 100%;
   height: 100%;
-  margin: 0px 70px;
+  padding: 30px;
+  margin: 0px 15px;
 
   display: flex;
   justify-content: space-between;
 
   transition-duration: .2s;
 }
+
 
 header li {
   display: block;
@@ -496,6 +496,8 @@ section div.promises {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blue(4px);
 
+  padding: 20px;
+  margin: 30px;
   border-radius: 8px;
 
   box-shadow: 0px 15px 15px 10px var(--shadow),
@@ -525,7 +527,8 @@ section#intro {
 }
 
 section#intro div.cont {
-  height: 70%;
+  height: 100%;
+  margin: 130px 0px 30px 0px;
 
   display: flex;
   flex-direction: column;
@@ -659,6 +662,10 @@ div#socials > div:hover {
 }
 
 /* About Section */
+section#about {
+  margin-top: 50px;
+}
+
 div#about-style {
   background: var(--bg2);
 
@@ -676,14 +683,13 @@ section#about div.cont {
 }
 
 /* Skills Section */
+section#skills {
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, .5);
+}
+
 section#skills div.cont {
   display: flex;
   flex-direction: column;
-}
-
-section#skills div.cont div#cards {
-  display: flex;
-  justify-content: space-around;
 }
 
 div.skill-block {
@@ -743,8 +749,6 @@ section#google div.cont {
 section#google div.platform {
   width: 100%;
   margin: 20px 0px;
-
-  display: flex;
 }
 
 section#google div.img-div {
@@ -752,11 +756,17 @@ section#google div.img-div {
   width: 150%;
 }
 
+section#google figure {
+  display: block;
+
+  margin-top: 20px;
+}
+
 section#google #google-design {
   width: auto;
 
-  position: absolute;
-  left: 10%;
+  position: relative;
+  width: 70%;
 }
 
 /* Meta Ads Section */
@@ -766,7 +776,6 @@ section#meta {
 
 section#meta div.cont > div {
   margin: 40px 0px;
-
 }
 
 section#meta div.cont {
@@ -776,8 +785,6 @@ section#meta div.cont {
 
 section#meta div.platform {
   width: 100%;
-
-  display: flex;
 }
 
 section#meta figure img {
@@ -820,7 +827,7 @@ div.contact img {
 
 form {
   width: 100%;
-  padding: 40px 10px;
+  padding: 40px 30px;
 
   border-radius: 20px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3),
@@ -854,6 +861,7 @@ footer {
   color: var(--txtColor);
 
   padding: 30px 30px 0px 30px;
+  margin-top: 30px;
 
   display: flex;
   flex-direction: column;
@@ -898,13 +906,8 @@ footer li {
   margin: 20px;
 }
 
-footer div#footerNav {
-  display: flex;
-  justify-content: space-around;
-}
-
 div#footerNav > div {
-  width: 35%;
+  width: 100%;
   padding: 20px;
 }
 
@@ -920,32 +923,32 @@ footer div#credits {
 
 /* Effects */
 .curves1 {
-  width: 100vw;
+  width: 300vw;
   height: 250vh;
 
-  margin-left: -120px;
+  margin-left: -450px;
 
   position: absolute;
-  top: 300%;
+  top: 540%;
   z-index: 0;
 }
 
 .curves2 {
-  width: 110vw;
+  width: 300vw;
 
   margin-left: -70px;
 
   position: absolute;
-  top: 590%;
+  top: 1075%;
 }
 
 .curves3 {
-  width: 110vw;
+  width: 300vw;
 
   margin-left: -70px;
 
   position: absolute;
-  top: 160%;
+  top: 170%;
 }
 
 div#cursorCircle {

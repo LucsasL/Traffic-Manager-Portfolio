@@ -32,11 +32,15 @@ header > div {
   margin: 0px 150px;
 }
 
+header.scrolled > div {
+  padding: 30px;
+}
+
 header div#mainHeader {
-  width: 55%;
+  width: 60%;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 header div#menuButton {
@@ -44,7 +48,7 @@ header div#menuButton {
 }
 
 header menu {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +101,16 @@ div.results div.promises {
   height: 250px;
 }
 
+section div.promises {
+  top: auto;
+  left: auto;
+}
+
 /* Intro Section */
+section#intro div.cont {
+  margin: 20px 0px;
+}
+
 section#intro div.intro-content {
   width: 100%;
 
@@ -167,6 +180,11 @@ div.skill-block {
   border-radius: 10px;
 }
 
+section#skills div.cont div#cards {
+  display: flex;
+  justify-content: space-around;
+}
+
 section div.img-div {
   display: flex;
   flex-direction: column;
@@ -182,9 +200,35 @@ section#about div {
   width: 80%;
 }
 
+/* Google Section */
+section#google div.platform {
+  width: 100%;
+  margin: 20px 0px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+section#google #google-design {
+  width: auto;
+
+  position: absolute;
+  left: 10%;
+  transform: translateY(-25%);
+}
+
+/* Meta Section */
+section#meta div.platform {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
 /* CTA Section */
 form {
   width: 650px;
+  padding: 40px 20px;
 }
 
 form div {
@@ -194,4 +238,49 @@ form div {
 /**/
 div.scroll-anim {
   width: 100%;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 0px;
+}
+
+footer div#footerNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+div#footerNav > div {
+  width: 35%;
+  padding: 20px;
+}
+
+/* Effects */
+.curves1 {
+  width: 100vw;
+  height: 250vh;
+
+  margin-left: -120px;
+
+  position: absolute;
+  top: 300%;
+  z-index: 0;
+}
+
+.curves2 {
+  width: 110vw;
+
+  margin-left: -70px;
+
+  position: absolute;
+  top: 590%;
+}
+
+.curves3 {
+  width: 110vw;
+
+  margin-left: -70px;
+
+  position: absolute;
+  top: 160%;
 }
