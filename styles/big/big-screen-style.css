@@ -21,6 +21,12 @@
   border-radius: 20px;
 }
 
+/* Icons */
+div#msg-me {
+  top: 85%;
+  left: 90%;
+}
+
 /* Header Settings */
 header > div {
   margin: 0px 150px;
@@ -68,6 +74,7 @@ section {
 
 section div.cont {
   width: 80%;
+  height: 90%;
   display: flex;
   justify-content: space-around;
 }
@@ -91,7 +98,61 @@ div.results div.promises {
 }
 
 /* Intro Section */
+section#intro div.intro-content {
+  width: 100%;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#intro div.intro-content > div {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+section#intro div.intro-content > div#introImg {
+  display: block;
+}
+
+section#intro div.intro-content h1 {
+  width: 100%;
+  height: 180px;
+
+  position: relative;
+  top: 0;
+  display: inline-block;
+}
+
+section#intro div.intro-content span.nickname {
+  font-size: 4em;
+
+  position: absolute;
+  top: 0;
+}
+
+section#intro span.cursiveWords {
+  font: bolder 2em 'Kalam', cursive;
+  letter-spacing: .25em;
+}
+
+h2.intro-h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+div#introducing {
+  transform: matrix(1, -.15, 0, 1, 10, 1);
+}
+
+div#socials div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Skills Section */
 section#skills {
@@ -128,4 +189,9 @@ form {
 
 form div {
   width: 95%;
+}
+
+/**/
+div.scroll-anim {
+  width: 100%;
 }
