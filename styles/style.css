@@ -843,6 +843,8 @@ div.contact img {
 }
 
 form {
+  background: var(--shadow);
+
   width: 100%;
   padding: 40px 30px;
 
