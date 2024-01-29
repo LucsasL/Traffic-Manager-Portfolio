@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* Intro Section */
+section#intro div.cont {
+  width: 100%;
+}
+
+section#intro div.cont > div{
+  width: 100%;
+}
+
+section#intro-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+section#intro-content > div {
+  width: 50%;
+}
+
+div#scroll-anim {
+  width: 100vw;
+}
+
+/* SKills Sections */
+section#skills div#cards {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform: translateX(-10%);
+}
+
+section#skills div.skill-block {
+  width: 400px;
+  margin: 20px;
+}
+
+/* About Section */
+div.about-style {
+  height: 700px;
+}
+
+section#about div.cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+section#about div.cont > div {
+  width: 50%;
+}
+
+/* Google Section */
+div#prom-container {
+  width: 100%;
+}
+
+div.promises {
+  width: 45%;
+}
+
+div.results > div#prom-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* CTA Section */
+section#grow div.cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Footer Section */
+div#footerNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Effects */
+.curves1 {
+  margin-left: -80%;
+  position: absolute;
+  top: 485%;
+}
+
+.curves2 {
+  margin-left: -30%;
+  position: absolute;
+  top: 800%;
+}
+
+.curves3 {
+  margin-left: -20%;
+}
