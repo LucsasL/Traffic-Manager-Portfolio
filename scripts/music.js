@@ -1,8 +1,7 @@
 const musicButton = document.querySelector("canvas#musicButton");
 const audioPlayer = document.querySelector("audio#player");
 
-function playMusic() {
-
+window.addEventListener("load", () => {
   /* Rendering button animation */
   let opt = {
     width: musicButton.offsetWidth,
@@ -14,7 +13,7 @@ function playMusic() {
     speed: -0.1,
     strokeColor: "black",
     strokeWidth: 1.5,
-    power: false
+    power: true,
   }
 
   musicButton.width = opt.width * 2;
@@ -35,7 +34,7 @@ function playMusic() {
   const render = () => {
     window.requestAnimationFrame(render);
     ctx.clearRect(0, 0, opt.width, opt.height);
-    time += 1;
+    time++;
     ctx.beginPath();
     let increment = 0;
 
@@ -44,20 +43,22 @@ function playMusic() {
         increment += 0.1;
 
       } else {
-        increment -= 0.1;
+        increment += -0.1;
 
       }
+
+      const x = (opt.width / opt.points) * i;
+      const y =
+        opt.midY +
+        Math.sin((time * opt.speed * i) / opt.stretch) *
+          opt.sinHeight *
+          increment;
+
+      ctx.lineTo(x, y);
     }
 
-    const x = (opt.width / opt.points) * i;
-    const y = opt.midY + Math.sin(time * opt.speed * i / opt.stretch) * 
-    opt.sinHeight *
-    increment;
-
-    ctx.lineTo(x, y);
-  }
-
-  ctx.stroke();
+    ctx.stroke();
+  };
 
   render();
 
@@ -70,7 +71,7 @@ function playMusic() {
       TweenMax.to(opt, 1, {
         sinHeight: 4,
         stretch: 5,
-        ease: Power2.easeInOut
+        ease: Power2.easeInOut,
       })
       
     } else {
@@ -78,10 +79,10 @@ function playMusic() {
       TweenMax.to(opt, 1, {
         sinHeight: 0,
         stretch: 10,
-      power: Power3.easeOut
+      power: Power3.easeOut,
 
       })
-    }
+    };
 
   })
-}
+});
