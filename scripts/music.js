@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
     strokeColor: "black",
     strokeWidth: 1.5,
     power: true,
-  }
+  };
 
   musicButton.width = opt.width * 2;
   musicButton.height = opt.height * 2;
@@ -41,10 +41,8 @@ window.addEventListener("load", () => {
     for (i = 0; i <= opt.points; i++) {
       if (i <= opt.points / 2) {
         increment += 0.1;
-
       } else {
         increment += -0.1;
-
       }
 
       const x = (opt.width / opt.points) * i;
@@ -72,17 +70,14 @@ window.addEventListener("load", () => {
         sinHeight: 4,
         stretch: 5,
         ease: Power2.easeInOut,
-      })
-      
+      });
     } else {
       audioPlayer.pause();
       TweenMax.to(opt, 1, {
         sinHeight: 0,
         stretch: 10,
-      power: Power3.easeOut,
-
-      })
-    };
-
-  })
+        power: Power3.easeOut,
+      });
+    }
+  });
 });
