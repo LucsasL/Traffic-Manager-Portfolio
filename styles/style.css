@@ -240,6 +240,15 @@ input#music {
 }
 
 /* Media Settings */
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
 picture, figure {
   width: 100%;
   height: 100%;
