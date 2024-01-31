@@ -14,8 +14,13 @@ div.intro-content {
   justify-content: space-around;
 }
 
-div.intro-content > div > div {
+section#intro div.intro-content > div {
   width: 50%;
+
+  text-align: left;
+
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 div.introducing {
@@ -26,9 +31,14 @@ div.intro-content div#introImg {
   display: block;
 }
 
-div.socials > div {
+section#intro div#socials {
   display: flex;
+  justify-content: start;
   flex-direction: column;
+}
+
+section#intro div.intro-content div#introImg {
+  display: block;
 }
 
 div#scroll-anim {
@@ -45,7 +55,7 @@ section#skills div#cards {
 }
 
 section#skills div.skill-block {
-  width: 400px;
+  width: 44%;
   margin: 20px;
 }
 

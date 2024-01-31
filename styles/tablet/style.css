@@ -6,15 +6,18 @@ section#intro div.intro-content > div {
   flex-direction: row-reverse;
 }
 
-section#intro div.intro-content > div {
-  width: 60%;
+section#intro div.intro-content {
+  display: flex;
+  justify-content: space-around;
 }
 
 div.intro-content div#introducing {
   text-align: left;
 }
 
-section#intro div.intro-content > div.introImg {
+section#intro div.intro-content > div#introImg {
+  width: 40%;
+
   display: block;
 }
 
