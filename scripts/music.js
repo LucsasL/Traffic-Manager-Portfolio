@@ -1,3 +1,5 @@
+import { TweenMax } from "../gsap/gsap-core.js";
+
 const musicButton = document.querySelector("canvas#musicButton");
 const audioPlayer = document.querySelector("audio#player");
 
@@ -38,7 +40,7 @@ window.addEventListener("load", () => {
     ctx.beginPath();
     let increment = 0;
 
-    for (i = 0; i <= opt.points; i++) {
+    for (let i = 0; i <= opt.points; i++) {
       if (i <= opt.points / 2) {
         increment += 0.1;
       } else {
@@ -69,14 +71,14 @@ window.addEventListener("load", () => {
       TweenMax.to(opt, 1, {
         sinHeight: 4,
         stretch: 5,
-        ease: Power2.easeInOut,
+        ease: Power2.easeInOut
       });
     } else {
       audioPlayer.pause();
       TweenMax.to(opt, 1, {
         sinHeight: 0,
         stretch: 10,
-        power: Power3.easeOut,
+        power: Power3.easeOut
       });
     }
   });
