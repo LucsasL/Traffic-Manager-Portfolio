@@ -9,13 +9,13 @@ window.addEventListener("load", () => {
     width: musicButton.offsetWidth,
     height: musicButton.offsetHeight,
     midY: musicButton.offsetHeight / 2,
-    points: 80,
+    points: 20,
     stretch: 10,
     sinHeight: 0,
     speed: -0.1,
     strokeColor: "black",
     strokeWidth: 1.5,
-    power: true,
+    power: false,
   };
 
   musicButton.width = opt.width * 2;
@@ -69,7 +69,7 @@ window.addEventListener("load", () => {
     if (opt.power) {
       audioPlayer.play();
       TweenMax.to(opt, 1, {
-        sinHeight: 4,
+        sinHeight: 10,
         stretch: 5,
         ease: Power2.easeInOut
       });
