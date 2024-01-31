@@ -122,6 +122,8 @@ section#intro div.intro-content {
 section#intro div.intro-content > div {
   width: 50%;
 
+  text-align: left;
+
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
@@ -159,6 +161,11 @@ h2.intro-h2 {
 
 div#introducing {
   transform: matrix(1, -.15, 0, 1, 10, 1);
+}
+
+div#socials {
+  display: flex;
+  flex-direction: column;
 }
 
 div#socials div {

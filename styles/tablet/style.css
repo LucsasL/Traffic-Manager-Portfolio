@@ -1,8 +1,26 @@
 @charset "UTF-8";
 
 /* Intro Section */
-section#intro div#intro-content > div#introImg {
+section#intro div.intro-content > div {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+section#intro div.intro-content > div {
+  width: 60%;
+}
+
+div.intro-content div#introducing {
+  text-align: left;
+}
+
+section#intro div.intro-content > div.introImg {
   display: block;
+}
+
+div#socials {
+  display: flex;
+  flex-direction: column;
 }
 
 /* SKills Sections */

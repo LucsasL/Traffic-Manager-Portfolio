@@ -14,12 +14,21 @@ div.intro-content {
   justify-content: space-around;
 }
 
-div.intro-content > div {
+div.intro-content > div > div {
   width: 50%;
 }
 
-div#introImg {
+div.introducing {
+  text-align: left;
+}
+
+div.intro-content div#introImg {
   display: block;
+}
+
+div.socials > div {
+  display: flex;
+  flex-direction: column;
 }
 
 div#scroll-anim {

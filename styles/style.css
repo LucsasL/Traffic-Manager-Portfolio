@@ -242,11 +242,13 @@ input#music {
 /* Media Settings */
 .hidden {
   opacity: 0;
+  transform: translateX(-100%);
   transition: all 1s;
 }
 
 .show {
   opacity: 1;
+  transform: translateX(0);
 }
 
 picture, figure {
@@ -567,9 +569,12 @@ section#intro div.intro-content {
 
 section#intro div.intro-content > div {
   width: 100%;
+  padding: 30px;
+
+  text-align: center;
 
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 section#intro div.intro-content > div#introImg {
@@ -642,10 +647,9 @@ div#introducing button:hover {
 }
 
 div#socials {
-  margin: 0px 10px;
+  margin: 10px;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
