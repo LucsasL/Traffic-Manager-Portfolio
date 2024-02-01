@@ -562,9 +562,6 @@ section#intro div.intro3D {
 }
 
 section#intro {
-  background: url('../img/pattern.jpg') no-repeat center;
-  background-size: cover;
-
   height: 100vh;
   margin-top: 0;
 
@@ -1028,9 +1025,11 @@ div#cursorCircle {
 
 div.scroll-anim {
   width: 100vw;
+  margin-bottom: 20px;
 
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 div.scroll-anim > div {
