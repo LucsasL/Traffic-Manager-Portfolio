@@ -104,41 +104,35 @@ section div.promises {
 
 /* Intro Section */
 section#intro div.cont {
-  margin: 20px 0px;
-}
-
-section#intro div.intro-content {
   width: 100%;
+  margin: 20px 0px;
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: start;
   align-items: center;
 }
 
-section#intro div.intro-content > div {
-  width: 50%;
+section#intro div.cont > div {
+  width: 70%;
+  margin-left: 2%;
 
   text-align: left;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   flex-direction: row-reverse;
 }
 
-section#intro div.intro-content > div#introImg {
-  display: block;
-}
-
-section#intro div.intro-content h1 {
+section#intro div.cont h1 {
   width: 100%;
-  height: 180px;
 
   position: relative;
   top: 0;
   display: inline-block;
 }
 
-section#intro div.intro-content span.nickname {
+section#intro div.cont span.nickname {
   font-size: 4em;
 
   position: absolute;
@@ -156,6 +150,7 @@ h2.intro-h2 {
 }
 
 div#introducing {
+  width: 50%;
   transform: matrix(1, -.15, 0, 1, 10, 1);
 }
 

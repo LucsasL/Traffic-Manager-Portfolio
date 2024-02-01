@@ -552,6 +552,15 @@ section h1 {
 }
 
 /* Intro Section */
+section#intro div.intro3D {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 section#intro {
   background: url('../img/pattern.jpg') no-repeat center;
   background-size: cover;
@@ -565,20 +574,17 @@ section#intro {
 }
 
 section#intro div.cont {
-  height: 100%;
+  width: 100vw;
+  height: 85vh;
   margin: 130px 0px 30px 0px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  z-index: 1;
 }
 
-section#intro div.intro-content {
-  width: 100vw;
-  height: 100%;
-}
-
-section#intro div.intro-content > div {
+section#intro div.cont > div {
   width: 100%;
   padding: 30px;
 
@@ -588,11 +594,7 @@ section#intro div.intro-content > div {
   flex-direction: column;
 }
 
-section#intro div.intro-content > div#introImg {
-  display: none;
-}
-
-section#intro div.intro-content h1 {
+section#intro div.cont h1 {
   width: 100%;
   height: 160px;
 
@@ -600,7 +602,7 @@ section#intro div.intro-content h1 {
   display: inline-block;
 }
 
-section#intro div.intro-content span.nickname {
+section#intro div.cont span.nickname {
   color: var(--txtColor);
 
   font-size: 3em;
@@ -624,7 +626,7 @@ section#intro span.cursiveWords {
   text-align: center;
   font: bolder 1.5em 'Kalam', cursive;
   letter-spacing: .18em;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .9));
+  filter: drop-shadow(2px 2px 5px rgb(0, 0, 0));
 
   display: inline-block;
 
@@ -639,6 +641,7 @@ h2.intro-h2 {
 }
 
 div#introducing {
+  width: 100%;
   transform: none;
 }
 
