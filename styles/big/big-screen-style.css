@@ -43,10 +43,6 @@ header div#mainHeader {
   justify-content: space-around;
 }
 
-header div#menuButton {
-  display: none;
-}
-
 header menu {
   width: 100%;
   display: flex;

@@ -301,9 +301,8 @@ header > div {
   transition-duration: .2s;
 }
 
-
 header li {
-  display: block;
+  display: none;
   list-style-type: none;
   margin: 10px;
 }
@@ -342,12 +341,6 @@ header a:hover {
   color: transparent;
 }
 
-header div#menuButton {
-  display: block;
-
-  cursor: pointer;
-}
-
 header div#mainHeader {
   display: flex;
   align-items: center;
@@ -359,7 +352,11 @@ div#mainHeader > * {
 
 header menu {
   width: 100%;
-  display: none;
+  display: block;
+}
+
+header div#musicDiv {
+  display: inline;
 }
 
 header canvas {
@@ -386,6 +383,10 @@ div#bgcolor input {
   position: relative;
   z-index: 1;
   display: none;
+}
+
+div#bgcolor label {
+  display: inline;
 }
 
 div#bgcolor span {
