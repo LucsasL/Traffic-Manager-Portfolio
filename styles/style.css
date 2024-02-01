@@ -92,6 +92,8 @@ body * {
 }
 
 div#ui {
+  background: var(--bg);
+
   height: 100%;
   overflow-x: clip;
   z-index: 1;
@@ -242,13 +244,11 @@ input#music {
 /* Media Settings */
 .hidden {
   opacity: 0;
-  transform: translateX(-100%);
   transition: all 1.5s;
 }
 
 .show {
   opacity: 1;
-  transform: translateX(0);
 }
 
 picture, figure {
@@ -342,7 +342,10 @@ header a:hover {
 }
 
 header div#mainHeader {
+  width: 40%;
+
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -352,11 +355,13 @@ div#mainHeader > * {
 
 header menu {
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: space-around;
 }
 
 header div#musicDiv {
-  display: inline;
+  display: inline-flex;
+  align-items: center;
 }
 
 header canvas {
@@ -377,6 +382,11 @@ header canvas:hover {
     var(--color0),
     var(--color1)
   );
+}
+
+div#bgcolor {
+  display: flex;
+  align-items: center;
 }
 
 div#bgcolor input {
@@ -935,6 +945,10 @@ div#meetMe a {
 
 div#meetMe a:hover {
   filter: brightness(1);
+}
+
+footer ul {
+  width: 110%;
 }
 
 footer li {

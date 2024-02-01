@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/* Header Settings */
+header li {
+  display: inline-block;
+}
+
+header div#mainHeader {
+  width: 70%;
+}
+
 /* Intro Section */
 section#intro div.cont {
   width: 100%;
