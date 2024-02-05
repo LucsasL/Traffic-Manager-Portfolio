@@ -277,14 +277,9 @@ figure img {
   height: 50px;
 }
 
-.content-img {
-  width: 100%;
-  height: 100%;
-}
-
 .skills-img {
-  width: 90%;
-  height: 90%;
+  width: 90px;
+  height: 90px;
 }
 
 figcaption {
@@ -833,7 +828,8 @@ section#google #google-design {
   width: auto;
 
   position: relative;
-  width: 70%;
+  width: 600px;
+  height: auto;
 }
 
 /* Meta Ads Section */
@@ -860,6 +856,7 @@ section#meta div.platform > div {
 
 section#meta #meta-design {
   width: 500px;
+  height: auto;
 }
 
 /* CTA sect */
