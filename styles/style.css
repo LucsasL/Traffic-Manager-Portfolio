@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* Imports */
 @font-face {
   font-family: 'Plus Jakarta Sans';
   src: url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
@@ -71,7 +70,6 @@
   outline: none;
 
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-display: auto;
 }
 
 ::-webkit-scrollbar {
@@ -270,21 +268,6 @@ picture, figure {
 
 figure img {
   width: 100%;
-}
-
-.icons {
-  width: 50px;
-  height: 50px;
-}
-
-.content-img {
-  width: 100%;
-  height: 100%;
-}
-
-.skills-img {
-  width: 90%;
-  height: 90%;
 }
 
 figcaption {
@@ -854,12 +837,8 @@ section#meta div.platform {
   width: 100%;
 }
 
-section#meta div.platform > div {
-  width: 50%;
-}
-
-section#meta #meta-design {
-  width: 500px;
+section#meta figure img {
+  width: 70%;
 }
 
 /* CTA sect */
@@ -954,6 +933,10 @@ footer a:hover {
   -webkit-background-clip: text;
 
   color: transparent;
+}
+
+div#meetMe img {
+  width: 90%;
 }
 
 div#meetMe li {
