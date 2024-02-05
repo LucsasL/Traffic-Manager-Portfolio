@@ -507,7 +507,7 @@ main > div {
 }
 
 section {
-  background: var(--bg);
+  background: transparent;
 
   width: 100%;
   padding: 50px auto;
@@ -979,7 +979,7 @@ footer div#credits {
 /* Effects */
 .curves1 {
   width: 300vw;
-  height: 250vh;
+  height: 25vh;
 
   margin-left: -650px;
 
