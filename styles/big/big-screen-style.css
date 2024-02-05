@@ -208,6 +208,7 @@ section#google div.platform {
 
 section#google #google-design {
   width: auto;
+  height: 150%;
 
   position: absolute;
   left: 10%;
