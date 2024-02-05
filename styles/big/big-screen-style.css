@@ -222,6 +222,10 @@ section#meta div.platform {
   justify-content: space-around;
 }
 
+section#meta div.platform > div {
+  width: 50%;
+}
+
 /* CTA Section */
 form {
   width: 650px;
