@@ -837,6 +837,10 @@ section#meta div.platform {
   width: 100%;
 }
 
+section#meta div.platform > div {
+  width: 50%;
+}
+
 section#meta figure img {
   width: 70%;
 }
