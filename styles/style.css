@@ -374,10 +374,17 @@ header canvas:hover {
 }
 
 div#bgcolor {
+  width: 50%;
+
   display: flex;
   align-items: center;
+
+  position: relative;
 }
 
+div#bgcolor span {
+  position: absolute;
+}
 
 div#bgcolor input {
   background: linear-gradient(
@@ -393,6 +400,7 @@ div#bgcolor input {
   display: block;
 
   position: relative;
+  left: 0;
   appearance: none;
 
   cursor: pointer;
@@ -425,7 +433,7 @@ div#bgcolor input:not(:checked) ~ i#symbol {
 
   position: absolute;
   top: 50%;
-  left: 90%;
+  left: 70%;
   transform: translate(-50%, -50%);
 
   mix-blend-mode: screen;
@@ -437,7 +445,7 @@ div#bgcolor input:checked ~ i#symbol {
 
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 25%;
   transform: translateY(-72%);
 }
 
@@ -464,11 +472,13 @@ div#bgcolor span i#thumb {
 
   position: absolute;
   top: 50%;
-  left: 90%;
+  left: 7%;
   transform: translateY(-50%);
+
+  pointer-events: none;
 }
 
-div#bgcolor input:checked ~ span i#thumb {
+div#bgcolor input:checked ~ i#thumb {
   position: absolute;
   left: calc(100% - 34px);
 }

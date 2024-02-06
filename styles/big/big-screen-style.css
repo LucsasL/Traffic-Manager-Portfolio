@@ -43,7 +43,7 @@ header li {
 }
 
 header div#bgcolor {
-  display: block;
+  width: 15%;
 }
 
 /* Main Settings */
