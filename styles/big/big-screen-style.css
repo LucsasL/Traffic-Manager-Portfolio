@@ -237,13 +237,12 @@ div#footerNav > div {
 
 /* Effects */
 .curves1 {
-  width: 50vw;
-  max-width: 110%;
+  width: 125vw;
 
-  margin-left: -200px;
+  margin-left: -100px;
 
   position: absolute;
-  top: 270%;
+  top: 300%;
   z-index: 0;
 }
 

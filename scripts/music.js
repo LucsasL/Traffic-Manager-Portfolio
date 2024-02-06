@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
     speed: -0.1,
     strokeColor: "black",
     strokeWidth: 1.5,
-    power: true,
+    power: false,
   };
 
   musicButton.width = opt.width * 2;
