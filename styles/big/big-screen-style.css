@@ -1,26 +1,5 @@
 @charset "UTF-8";
 
-/* General Settings */
-::-webkit-scrollbar {
-  display: none;
-  width: 8px;
-
-  position: absolute;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-corner {
-  display: none;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(54, 23, 255);
-  border-radius: 20px;
-}
-
 /* Icons */
 div#msg-me {
   top: 85%;
@@ -275,13 +254,4 @@ div#footerNav > div {
 
   position: absolute;
   top: 590%;
-}
-
-.curves3 {
-  width: 110vw;
-
-  margin-left: -70px;
-
-  position: absolute;
-  top: 160%;
 }

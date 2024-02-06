@@ -999,15 +999,6 @@ footer div#credits {
   top: 1075%;
 }
 
-.curves3 {
-  width: 300vw;
-
-  margin-left: -70px;
-
-  position: absolute;
-  top: 170%;
-}
-
 div#cursorCircle {
   background: linear-gradient(
     45deg,
