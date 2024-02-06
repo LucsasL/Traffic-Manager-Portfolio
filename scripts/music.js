@@ -1,5 +1,3 @@
-import { TweenMax, Power2, Power3 } from "../gsap/gsap-core.js";
-
 const musicButton = document.querySelector("canvas#musicButton");
 const audioPlayer = document.querySelector("audio#player");
 
