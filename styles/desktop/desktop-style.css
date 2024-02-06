@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 /* Header Settings */
+.headerName {
+  display: inline;
+}
+
 header li {
   display: inline-block;
 }

@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 /* Intro Section */
+.headerName {
+  display: inline;
+}
+
 section#intro div.intro-content > div {
   display: flex;
   flex-direction: row-reverse;

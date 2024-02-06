@@ -14,7 +14,6 @@
 
 /* General Settings */
 :root {
-  --base: black;
   --baseBlur: rgba(0, 0, 0, .3);
 
   --bg: #060606;
@@ -34,14 +33,9 @@
   --promises2: rgb(21, 21, 21, .5);
   --input: black;
   --bgCredit: #070707;
-
-  --canvasBg: rgb(196, 196, 196);
-
-  --contactButton: rgb(54, 23, 255);
 }
 
 .light-theme {
-  --base: white;
   --baseBlur: rgba(255, 255, 255, .3);
 
   --bg: rgb(225, 225, 225);
@@ -58,8 +52,6 @@
   --promises2: rgba(200, 200, 200, .5);
   --input: #f5f5f5;
   --bgCredit: #a8a8a8;
-
-  --footer: #aaa;
 }
 
 * {
@@ -100,8 +92,6 @@ body * {
 }
 
 div#ui {
-  background: var(--bg);
-
   height: 100%;
   overflow-x: clip;
   z-index: 1;
@@ -129,15 +119,8 @@ div#msg-me {
 }
 
 div#msg-me:hover {
-  background: linear-gradient(
-    125deg,
-    var(--color1),
-    var(--color0)
-  );
-
-  transition-duration: .5s;
-
-  box-shadow: 6px 6px 15px black;
+  box-shadow: 0px 0px 15px 2px rgb(95, 95, 255);
+  transition: .5s ease;
 }
 
 div#msg-me a {
@@ -146,15 +129,10 @@ div#msg-me a {
   height: 100%;
 }
 
-div#msg-me img {
-  width: 60%;
-  height: 60%;
-}
-
 /* Text Settings */
 p {
   color: var(--txtColor);
-  margin: 15px 0px;
+  margin: 20px 0px;
 
   font-size: 1.2em;
   line-height: 2em;
@@ -162,6 +140,7 @@ p {
 }
 
 h1 {
+  font-size: 2em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
 }
 
@@ -200,9 +179,9 @@ a {
   background: var(--bg3Blur);
 
   display: inline-block;
-  width: auto;
   padding: 20px;
   border-radius: 10px;
+  
   box-shadow: 0px 5px 15px var(--shadow),
               -3px -3px 2px rgba(255, 255, 255, .3),
               15px 15px 15px var(--shadow);
@@ -243,10 +222,6 @@ input, textarea {
   border-radius: 10px;
   border: none;
   outline: none;
-}
-
-input#music {
-  border-radius: 50%;
 }
 
 /* Media Settings */
@@ -299,6 +274,11 @@ header {
   z-index: 2;
 }
 
+.headerName {
+  margin-left: 8px;
+  display: none;
+}
+
 header.scrolled > div {
   background: var(--header);
   backdrop-filter: blur(5px);
@@ -315,30 +295,25 @@ header > div {
 
   display: flex;
   justify-content: space-between;
-
-  transition-duration: .2s;
 }
 
 header li {
   display: none;
-  list-style-type: none;
   margin: 10px;
 }
 
 header button {
   background: transparent;
-
   width: auto;
-  height: auto;
 }
 
 header button#contactButton {
-  border-bottom: 3px solid var(--contactButton);
+  border-bottom: 3px solid rgb(54, 23, 255);
   transition: all .5s ease;
 }
 
 header button#contactButton:hover {
-  box-shadow: 0px 3px 7px var(--contactButton);
+  box-shadow: 0px 3px 7px rgb(54, 23, 255);
 }
 
 header a {
@@ -367,10 +342,6 @@ header div#mainHeader {
   align-items: center;
 }
 
-div#mainHeader > * {
-  width: 100%;  
-}
-
 header menu {
   width: 100%;
   display: flex;
@@ -383,7 +354,7 @@ header div#musicDiv {
 }
 
 header canvas {
-  background: var(--canvasBg);
+  background: rgb(196, 196, 196);
 
   width: 50px;
   height: 50px;
@@ -407,17 +378,8 @@ div#bgcolor {
   align-items: center;
 }
 
+
 div#bgcolor input {
-  position: relative;
-  z-index: 1;
-  display: none;
-}
-
-div#bgcolor label {
-  display: inline;
-}
-
-div#bgcolor span {
   background: linear-gradient(
     to right,
     rgb(106, 106, 255),
@@ -431,6 +393,7 @@ div#bgcolor span {
   display: block;
 
   position: relative;
+  appearance: none;
 
   cursor: pointer;
   box-shadow: 0px 3px 10px 2px rgba(255, 0, 255, 0.218),
@@ -440,12 +403,13 @@ div#bgcolor span {
 div#bgcolor i#symbol {
   background: white;
 
+  display: inline-block;
   width: 18px;
   height: 18px;
   border-radius: 50%;
 }
 
-div#bgcolor input:not(:checked) ~ span i#symbol {
+div#bgcolor input:not(:checked) ~ i#symbol {
   border: 2px solid black;
   box-shadow: 9px 0px 0px -6px white,
               -9px 0px 0px -6px white,
@@ -461,23 +425,23 @@ div#bgcolor input:not(:checked) ~ span i#symbol {
 
   position: absolute;
   top: 50%;
-  left: calc(86% - 14%);
+  left: 90%;
   transform: translate(-50%, -50%);
 
   mix-blend-mode: screen;
 }
 
-div#bgcolor input:checked ~ span i#symbol {
+div#bgcolor input:checked ~ i#symbol {
   background: transparent;
   box-shadow: -4px 4px 0px 1px white;
 
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 80%;
   transform: translateY(-72%);
 }
 
-div#bgcolor label input:checked ~ span {
+div#bgcolor input:checked ~ input {
   background: linear-gradient(
     to right,
     var(--color0),
@@ -488,7 +452,7 @@ div#bgcolor label input:checked ~ span {
               inset 0px 0px 15px var(--shadow);
 }
 
-div#bgcolor label span i#thumb {
+div#bgcolor span i#thumb {
   background: white;
   box-shadow: 0px 0px 10px var(--shadow);
 
@@ -500,11 +464,11 @@ div#bgcolor label span i#thumb {
 
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 90%;
   transform: translateY(-50%);
 }
 
-div#bgcolor label input:checked ~ span i#thumb {
+div#bgcolor input:checked ~ span i#thumb {
   position: absolute;
   left: calc(100% - 34px);
 }
@@ -519,7 +483,7 @@ main > div {
 }
 
 section {
-  background: transparent;
+  background: var(--bg);
 
   width: 100%;
   padding: 50px auto;
@@ -528,12 +492,12 @@ section {
   justify-content: center;
 }
 
-section div.cont {
+div.cont {
   width: 80%;
   z-index: 1;
 }
 
-section div.results h1 {
+div.results h1 {
   text-align: center;
 }
 
@@ -565,10 +529,6 @@ section div.promises {
   left: auto;
 }
 
-section h1 {
-  font-size: 2em;
-}
-
 /* Intro Section */
 section#intro div.intro3D {
   width: 100vw;
@@ -591,7 +551,7 @@ section#intro {
 section#intro div.cont {
   width: 100vw;
   height: 85vh;
-  margin: 130px 0px 30px 0px;
+  margin: 70px 0px -30px 0px;
 
   display: flex;
   flex-direction: column;
@@ -617,7 +577,7 @@ section#intro div.cont h1 {
   display: inline-block;
 }
 
-section#intro div.cont span.nickname {
+section#intro span.nickname {
   color: var(--txtColor);
 
   font-size: 3em;
@@ -636,11 +596,9 @@ section#intro span.cursiveWords {
   -webkit-background-clip: text;
   color: transparent;
 
-  height: auto;
-
   text-align: center;
   font: bolder 1.5em 'Kalam', cursive;
-  letter-spacing: .18em;
+  letter-spacing: .26em;
   filter: drop-shadow(2px 2px 5px rgb(0, 0, 0));
 
   display: inline-block;
@@ -657,21 +615,19 @@ h2.intro-h2 {
 
 div#introducing {
   width: 100%;
-  transform: none;
 }
 
 div#introducing button {
   margin: 0px auto;
 
-  transition-duration: .5s;
+  transition: all .5s ease;
 }
 
 div#introducing button:hover {
   scale: 1.05;
 }
 
-  section#intro span {
-  font-size: 2em;
+section#intro span {
   line-height: 1.5em;
 }
 
@@ -699,9 +655,6 @@ div#socials div {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: relative;
-  top: 10%;
 }
 
 div#socials img {
@@ -710,13 +663,7 @@ div#socials img {
   height: 100%;
 
   filter: brightness(0);
-  transition: all .5s;
-}
-
-div#socials > div:hover {
-  scale: 1.01;
-
-  transition-duration: .4s;
+  transition: all .5s ease;
 }
 
 /* About Section */
@@ -769,7 +716,6 @@ div.skill-block {
               0px 5px 15px 1px var(--shadow);            
 
   border-radius: 10px;
-  transition-duration: .7s;
 
   display: flex;
   flex-direction: column;
@@ -799,8 +745,7 @@ section#google {
 }
 
 section#google div.cont > div {
-  margin: 100px 0px;
-
+  margin: 100px 0px 0px 0px;
 }
 
 section#google div.cont {
@@ -809,7 +754,6 @@ section#google div.cont {
 }
 
 section#google div.platform {
-  width: 100%;
   margin: 20px 0px;
 }
 
@@ -825,17 +769,12 @@ section#google figure {
 }
 
 section#google #google-design {
-  width: 700px;
-  height: auto;
+  width: 450px;
 
   position: relative;
 }
 
 /* Meta Ads Section */
-section#meta {
-  height: auto;
-}
-
 section#meta div.cont > div {
   margin: 40px 0px;
 }
@@ -845,7 +784,7 @@ section#meta div.cont {
   flex-direction: column;
 }
 
-section#meta div.platform {
+div.platform {
   width: 100%;
 }
 
@@ -953,7 +892,7 @@ div#meetMe li {
 
 div#meetMe a {
   filter: brightness(0);
-  transition: all .5s;
+  transition: all .5s ease;
 }
 
 div#meetMe a:hover {
@@ -986,22 +925,12 @@ footer div#credits {
 /* Effects */
 .curves1 {
   width: 300vw;
-  height: auto;
 
   margin-left: -150px;
 
   position: absolute;
   top: 600%;
   z-index: 0;
-}
-
-.curves2 {
-  width: 300vw;
-
-  margin-left: -70px;
-
-  position: absolute;
-  top: 1075%;
 }
 
 div#cursorCircle {

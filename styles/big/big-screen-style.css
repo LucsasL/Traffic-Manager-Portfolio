@@ -7,6 +7,10 @@ div#msg-me {
 }
 
 /* Header Settings */
+.headerName {
+  display: inline;
+}
+
 header > div {
   margin: 0px 150px;
 }
@@ -177,6 +181,10 @@ section#about div {
 }
 
 /* Google Section */
+section#google div.cont > div {
+  margin: 100px 0px;
+}
+
 section#google div.platform {
   width: 100%;
   margin: 20px 0px;
@@ -186,7 +194,7 @@ section#google div.platform {
 }
 
 section#google #google-design {
-  width: auto;
+  width: 700px;
 
   position: absolute;
   left: 10%;
