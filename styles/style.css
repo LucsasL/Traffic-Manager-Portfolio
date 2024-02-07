@@ -82,7 +82,7 @@ html, body {
   flex-direction: column;
   position: relative;
 
-  overflow-x: hidden;
+  overflow-x: clip;
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 
