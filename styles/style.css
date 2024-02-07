@@ -442,7 +442,7 @@ div#bgcolor input:not(:checked) ~ span i#symbol {
 
 div#bgcolor input:checked ~ span i#symbol {
   background: transparent;
-  box-shadow: -4px 4px 0px 1px white;
+  box-shadow: -4px 4px 0px 2px white;
 
   position: absolute;
   top: 40%;
