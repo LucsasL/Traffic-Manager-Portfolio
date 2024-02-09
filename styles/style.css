@@ -30,7 +30,7 @@
   --color1: rgb(128, 0, 255);
 
   --header: rgba(0, 0, 0, .5);
-  --promises: rgba(02, 02, 02, .5);
+  --promises: rgba(01, 01, 01);
   --input: rgba(0, 0, 0, 0.558);
   --bgCredit: #070707;
 }
