@@ -111,20 +111,3 @@ div#footerNav {
   display: flex;
   justify-content: space-around;
 }
-
-/* Effects */
-.curves1 {
-  margin-left: -80%;
-  position: absolute;
-  top: 485%;
-}
-
-.curves2 {
-  margin-left: -30%;
-  position: absolute;
-  top: 800%;
-}
-
-.curves3 {
-  margin-left: -20%;
-}

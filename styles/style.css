@@ -20,6 +20,7 @@
   --bg2: #010101;
   --bg3: #151515;
   --bg3Blur: rgba(0, 0, 0, .3);
+  --bg4: rgb(15, 15, 15);
 
   --shadow: rgba(0, 0, 0, 0.488);
   
@@ -30,7 +31,6 @@
 
   --header: rgba(0, 0, 0, .5);
   --promises: rgba(02, 02, 02, .5);
-  --promises2: rgb(21, 21, 21, .5);
   --input: rgba(0, 0, 0, 0.558);
   --bgCredit: #070707;
 }
@@ -42,6 +42,7 @@
   --bg2: rgb(210, 210, 210);
   --bg3: rgb(200, 200, 200);
   --bg3Blur: rgba(255, 255, 255, .3);
+  --bg4: rgb(190, 190, 190);
 
   --shadow: rgba(0, 0, 0, .1);
 
@@ -49,7 +50,6 @@
 
   --header: rgba(255, 255, 255, .5);
   --promises: rgb(235, 235, 235, .5);
-  --promises2: rgba(200, 200, 200, .5);
   --input: #e5e5e5d6;
   --bgCredit: #a8a8a8;
 }
@@ -229,7 +229,7 @@ input, textarea {
 .hidden {
   transform: translateX(-100%);
   opacity: 0;
-  transition: all 2s;
+  transition: all 2s ease;
 }
 
 .hidden1 {
@@ -523,6 +523,13 @@ div.results h1 {
   text-align: center;
 }
 
+/* Function Section */
+section#functions {
+  background: var(--bg4);
+  padding: 50px;
+  margin: 50px 0px 100px 0px;
+}
+
 div.prom-container {
   width: 100%;
   display: flex;
@@ -530,7 +537,7 @@ div.prom-container {
 }
 
 section div.promises {
-  background: rgba(1, 1, 1, 0.7);
+  background: var(--promises);
 
   font-size: 1.5em;
   font-weight: bolder;
@@ -945,39 +952,6 @@ footer div#credits {
 }
 
 /* Effects */
-.curves1 {
-  width: 300vw;
-
-  margin-left: -150px;
-
-  position: absolute;
-  top: 600%;
-  z-index: 0;
-}
-
-div#cursorCircle {
-  background: linear-gradient(
-    45deg,
-    var(--color0),
-    var(--color1)
-  );
-  width: 10px;
-  height: 10px;
-
-  border-radius: 50%;
-
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  transform: translate(-50%, -50%);
-
-  z-index: 3;
-
-  pointer-events: none;
-
-  display: block;
-}
-
 div.scroll-anim {
   width: 100vw;
   margin-bottom: 20px;

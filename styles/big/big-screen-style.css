@@ -320,23 +320,3 @@ div#footerNav > div {
   width: 35%;
   padding: 20px;
 }
-
-/* Effects */
-.curves1 {
-  width: 125vw;
-
-  margin-left: -100px;
-
-  position: absolute;
-  top: 450%;
-  z-index: 0;
-}
-
-.curves2 {
-  width: 110vw;
-
-  margin-left: -70px;
-
-  position: absolute;
-  top: 590%;
-}
