@@ -31,7 +31,7 @@
   --header: rgba(0, 0, 0, .5);
   --promises: rgba(02, 02, 02, .5);
   --promises2: rgb(21, 21, 21, .5);
-  --input: black;
+  --input: rgba(0, 0, 0, 0.558);
   --bgCredit: #070707;
 }
 
@@ -50,7 +50,7 @@
   --header: rgba(255, 255, 255, .5);
   --promises: rgb(235, 235, 235, .5);
   --promises2: rgba(200, 200, 200, .5);
-  --input: #e5e5e5;
+  --input: #e5e5e5d6;
   --bgCredit: #a8a8a8;
 }
 
@@ -797,6 +797,10 @@ section#google #google-design {
 }
 
 /* Meta Ads Section */
+section#meta {
+  height: auto;
+}
+
 section#meta div.cont > div {
   margin: 40px 0px;
 }

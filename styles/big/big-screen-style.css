@@ -63,7 +63,10 @@ section div.cont {
 }
 
 div.cont div.result {
-  width: 100%; 
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
 }
 
 div.results div {
@@ -108,7 +111,7 @@ section div.promises:nth-child(6) {
 
 /* Intro Section */
 section#intro div.cont {
-  width: 100%;
+  width: 86%;
   margin: 20px 0px;
 
   display: flex;
@@ -118,7 +121,7 @@ section#intro div.cont {
 }
 
 section#intro div.cont > div {
-  width: 70%;
+  width: 80%;
   margin-left: 2%;
 
   text-align: left;
@@ -226,6 +229,10 @@ section#google div.platform {
   justify-content: space-around;
 }
 
+section#google div.platform p {
+  width: 80%;
+}
+
 section#google #google-design {
   width: 700px;
 
@@ -239,6 +246,7 @@ section#meta div.platform {
   width: 100%;
 
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
 }
 
@@ -283,7 +291,7 @@ div#footerNav > div {
   margin-left: -100px;
 
   position: absolute;
-  top: 300%;
+  top: 450%;
   z-index: 0;
 }
 
