@@ -227,12 +227,24 @@ input, textarea {
 
 /* Media Settings */
 .hidden {
+  transform: translateX(-100%);
   opacity: 0;
-  transition: all 1.5s;
+  transition: all 2s;
+}
+
+.hidden1 {
+  opacity: 0;
+  transition: opacity 2.5s ease;
+}
+
+.hidden2 {
+  transform: translateX(100%);
+  transition: all .5s ease-in-out;
 }
 
 .show {
   opacity: 1;
+  transform: translateX(0);
 }
 
 picture, figure {
@@ -978,7 +990,7 @@ div.scroll-anim {
 div.scroll-anim > div {
   width: 30px;
   height: 50px;
-  border: 3px solid white;
+  border: 3px solid black;
   border-radius: 30px;
 
   display: flex;
@@ -987,7 +999,7 @@ div.scroll-anim > div {
 
 div.scroll-anim > div::after {
   content: '';
-  background: white;
+  background: black;
   width: 10px;
   height: 10px;
 

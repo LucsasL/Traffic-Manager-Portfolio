@@ -12,5 +12,10 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
+const hiddenElements = document.querySelectorAll(".hidden1");
+const hiddenSlideElements = document.querySelectorAll(".hidden");
+const hiddenSlideReverseElements = document.querySelectorAll(".hidden2");
+
 hiddenElements.forEach((el) => observer.observe(el));
+hiddenSlideElements.forEach((el) => observer.observe(el));
+hiddenSlideReverseElements.forEach((el) => observer.observe(el));

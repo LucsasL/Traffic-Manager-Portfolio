@@ -78,11 +78,32 @@ div.results div {
 div.results div.promises {
   width: 350px;
   height: 250px;
-}
-
-section div.promises {
   top: auto;
   left: auto;
+}
+
+section div.promises:nth-child(1) {
+  transition-duration: 2s;
+}
+
+section div.promises:nth-child(2) {
+  transition-duration: 1.5s;
+}
+
+section div.promises:nth-child(3) {
+  transition-duration: 1s;
+}
+
+section div.promises:nth-child(4) {
+  transition-duration: 2s;
+}
+
+section div.promises:nth-child(5) {
+  transition-duration: 1.5s;
+}
+
+section div.promises:nth-child(6) {
+  transition-duration: 1s;
 }
 
 /* Intro Section */
@@ -151,6 +172,18 @@ div#socials div {
 section#skills {
   display: flex;
   justify-content: space-around;
+}
+
+section#skills div.skill-block:nth-child(1) {
+  transition: transform 2.3s ease;
+}
+
+section#skills div.skill-block:nth-child(2) {
+  transition: transform 2s ease;
+}
+
+section#skills div.skill-block:nth-child(3) {
+  transition: transform 1.7s ease;
 }
 
 div.skill-block {
