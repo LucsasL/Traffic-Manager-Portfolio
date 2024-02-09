@@ -71,7 +71,6 @@
 }
 
 html, body {
-  background-color: var(--bg);
   color: var(--txtColor);
 
   width: 100vw;
@@ -485,6 +484,7 @@ div#bgcolor input:checked ~ span i#thumb {
 
 /* Main Settings */
 main {
+  background-color: var(--bg);
   width: 100%;
 }
 
@@ -493,7 +493,7 @@ main > div {
 }
 
 section {
-  background: var(--bg);
+  background: transparent;
 
   width: 100%;
   padding: 50px auto;
