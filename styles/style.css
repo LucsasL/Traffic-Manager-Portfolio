@@ -285,15 +285,14 @@ header.scrolled > div {
   background: var(--header);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-
-  border-radius: 20px;
 }
 
 header > div {
-  width: 100%;
+  width: 110%;
   height: 100%;
   padding: 30px;
   margin: 0px 15px;
+  border-radius: 20px;
 
   display: flex;
   justify-content: space-between;
