@@ -78,9 +78,16 @@ div.results div {
   flex-wrap: wrap;
 }
 
+div#prom-container {
+  height: auto;
+
+  display: grid;
+  grid-template-columns: auto 500px;
+  grid-template-rows: 300px 300px;
+  gap: 20px;
+}
+
 div.results div.promises {
-  width: 350px;
-  height: 250px;
   top: auto;
   left: auto;
 }

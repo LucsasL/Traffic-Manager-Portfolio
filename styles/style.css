@@ -239,7 +239,7 @@ input, textarea {
 
 .hidden2 {
   transform: translateX(100%);
-  transition: all .5s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .show {
@@ -840,9 +840,10 @@ div.contact {
   height: 75px;
 
   border-radius: 50%;
+  display: inline-block;
 }
 
-div.contact, p {
+div#ways-contact p {
   display: inline-block;
   margin: 20px 10px;
 }
