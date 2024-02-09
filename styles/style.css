@@ -222,7 +222,11 @@ input, textarea {
 
   border-radius: 10px;
   border: none;
-  outline: none;
+  outline: none
+}
+
+textarea {
+  resize: none;
 }
 
 /* Media Settings */
@@ -539,7 +543,7 @@ div.prom-container {
 section div.promises {
   background: var(--promises);
 
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: bolder;
 
   padding: 50px;
