@@ -530,25 +530,16 @@ div.prom-container {
 }
 
 section div.promises {
-  background: linear-gradient(
-    to bottom,
-    var(--promises),
-    var(--promises2)
-  );
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(1, 1, 1, 0.7);
 
-  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bolder;
+
+  padding: 50px;
   margin: 30px 10px;
-  border-radius: 8px;
-
-  box-shadow: 0px 15px 15px 10px var(--shadow),
-              -3px -3px 2px rgba(255, 255, 255, .3),
-              0px 5px 15px 1px var(--shadow);
+  border-radius: 20px;
 
   transition-duration: .7s;
-  top: auto;
-  left: auto;
 }
 
 /* Intro Section */
@@ -819,6 +810,10 @@ section#meta figure img {
 }
 
 /* CTA sect */
+section#grow {
+  height: auto;
+}
+
 section#grow div.cont > div {
   width: 100%;
 }

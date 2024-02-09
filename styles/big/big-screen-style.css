@@ -48,8 +48,6 @@ header div#bgcolor {
 
 /* Main Settings */
 section {
-  height: 900px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -73,9 +71,6 @@ div.results div {
   width: 100%;
   padding: 20px;
   margin: 20px;
-
-  display: inline-flex;
-  flex-wrap: wrap;
 }
 
 div#prom-container {
@@ -83,37 +78,78 @@ div#prom-container {
 
   display: grid;
   grid-template-columns: auto 500px;
-  grid-template-rows: 300px 300px;
-  gap: 20px;
+  grid-template-rows: 500px 500px 500px;
+  gap: 30px;
 }
 
 div.results div.promises {
-  top: auto;
-  left: auto;
+  margin: 0;
 }
 
 section div.promises:nth-child(1) {
+  background:
+    radial-gradient(
+      circle at 50% 0,
+      rgba(53, 201, 255, 0.5),
+      rgb(255 0 0 / 0%) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgb(0 0 255 / 50%),
+      rgb(0 0 255 / 0%) 70.71%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgb(128 0 255 / 50%),
+        rgb(128 0 255 / 0%) 70.71%
+    );
+
   transition-duration: 2s;
 }
 
 section div.promises:nth-child(2) {
+    background: radial-gradient(
+      circle 500px at 30% 30%,
+      rgb(0, 0, 255, 0.5),
+      black
+    );
   transition-duration: 1.5s;
 }
 
 section div.promises:nth-child(3) {
+  background: radial-gradient(
+    circle 500px at 30% 30%,
+    rgb(0, 0, 255),
+    black
+  );
   transition-duration: 1s;
 }
 
 section div.promises:nth-child(4) {
+    background:
+    radial-gradient(
+      circle at 50% 0,
+      rgba(53, 201, 255, 0.5),
+      rgb(255 0 0 / 0%) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgb(0 0 255 / 50%),
+      rgb(0 0 255 / 0%) 70.71%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgb(128 0 255 / 50%),
+        rgb(128 0 255 / 0%) 70.71%
+    );
   transition-duration: 2s;
 }
 
 section div.promises:nth-child(5) {
   transition-duration: 1.5s;
-}
 
-section div.promises:nth-child(6) {
-  transition-duration: 1s;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Intro Section */
@@ -208,17 +244,11 @@ section#skills div.cont div#cards {
   justify-content: space-around;
 }
 
-section div.img-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-div.img-div figure {
-  height: 90%;
-}
-
 /* About Section */
+section#about {
+  height: 900px;
+}
+
 section#about div {
   width: 80%;
 }
