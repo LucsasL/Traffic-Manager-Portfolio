@@ -257,6 +257,11 @@ section#about div {
 }
 
 /* Google Section */
+section#google div.cont {
+  display: flex;
+  justify-content: space-around;
+}
+
 section#google div.cont > div {
   margin: 100px 0px;
 }
@@ -269,15 +274,18 @@ section#google div.platform {
   justify-content: space-around;
 }
 
+section#google div.platform > div {
+  width: 60%;
+}
+
 section#google div.platform p {
-  width: 80%;
+  width: 90%;
 }
 
 section#google #google-design {
   width: 700px;
 
   position: absolute;
-  left: 10%;
   transform: translateY(-25%);
 }
 

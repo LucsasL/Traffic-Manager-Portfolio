@@ -768,13 +768,13 @@ section#google {
   height: auto;
 }
 
-section#google div.cont > div {
-  margin: 100px 0px 0px 0px;
-}
-
 section#google div.cont {
   display: flex;
   flex-direction: column;
+}
+
+section#google div.cont > div {
+  margin: 100px 0px 0px 0px;
 }
 
 section#google div.platform {
@@ -783,6 +783,7 @@ section#google div.platform {
 
 section#google div.img-div {
   position: relative;
+  width: 100%;
 }
 
 section#google figure {
