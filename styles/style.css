@@ -313,7 +313,7 @@ header > div {
   height: 100%;
   padding: 30px;
   margin: 0px 15px;
-  border-radius: 20px;
+  border-radius: 50px;
 
   display: flex;
   justify-content: space-between;
