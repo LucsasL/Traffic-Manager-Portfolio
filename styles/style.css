@@ -278,6 +278,12 @@ figcaption {
   display: none;
 }
 
+iframe {
+  display: block;
+  width: 140vw;
+  position: absolute;
+}
+
 /* Header Settings */
 header {
   width: 100vw;
