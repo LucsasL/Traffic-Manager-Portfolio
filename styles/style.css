@@ -278,7 +278,7 @@ figcaption {
   display: none;
 }
 
-iframe {
+iframe#mascot {
   display: block;
   width: 140vw;
   position: absolute;
