@@ -559,6 +559,70 @@ section div.promises {
   transition-duration: .7s;
 }
 
+section div.promises:nth-child(1) {
+  background: linear-gradient(
+      to right,
+      blue,
+      rgb(128, 0 ,255),
+      rgb(205, 54, 255)
+    );
+  background-size: 300% 100%;
+
+  transition-duration: 2s;
+
+  animation: gradient-move 2s infinite alternate;
+}
+
+section div.promises:nth-child(2) {
+  background: linear-gradient(
+    to bottom,
+    var(--bg2),
+    rgb(0, 0, 49)
+  );
+  transition-duration: 1.5s;
+}
+
+section div.promises:nth-child(3) {
+  background: linear-gradient(
+    to bottom,
+    var(--bg2),
+    rgb(0, 0, 49)
+  );
+  transition-duration: 1s;
+}
+
+section div.promises:nth-child(4) {
+    background: linear-gradient(
+      to right,
+      blue,
+      rgb(128, 0 ,255),
+      rgb(205, 54, 255)
+    );
+  background-size: 300% 100%;
+
+  transition-duration: 2s;
+
+  animation: gradient-move 2s infinite alternate;
+}
+
+section div.promises:nth-child(5) {
+  transition-duration: 1.5s;
+
+  display: flex;
+  justify-content: space-around;
+
+  grid-column: span 2 / auto;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
 /* Intro Section */
 section#intro div.intro3D {
   width: 100vw;
