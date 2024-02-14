@@ -83,6 +83,10 @@ div#prom-container {
   gap: 30px;
 }
 
+div.promises:nth-child(4) {
+  grid-template-columns: 2fr;
+}
+
 div.results div.promises {
   margin: 0;
 }
