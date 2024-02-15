@@ -138,10 +138,6 @@ h2.intro-h2 {
   margin-top: 0;
 }
 
-div#introducing {
-  width: 50%;
-}
-
 div#socials {
   display: flex;
   flex-direction: column;
